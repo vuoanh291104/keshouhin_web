@@ -16,8 +16,21 @@
                 "file": "Task/TODO.md"
               }
             }
+          },
+          {
+            "id": "a691f20fb1d2721e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GhiChep/Nội dung 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Task/TODO.md",
+                "file": "GhiChep/Nội dung 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Task/TODO.md",
+                "file": "GhiChep/Nội dung 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Task/TODO.md"
+                "file": "GhiChep/Nội dung 1.md"
               }
             }
           }
@@ -144,10 +157,11 @@
       "command-palette:Mở khay lệnh": false
     }
   },
-  "active": "d35e58c9d919634c",
+  "active": "a691f20fb1d2721e",
   "lastOpenFiles": [
-    "GhiChep",
     "Task/TODO.md",
+    "GhiChep/Nội dung 1.md",
+    "GhiChep",
     "Task",
     "Welcome.md"
   ]
