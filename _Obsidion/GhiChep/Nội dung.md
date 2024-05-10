@@ -10,7 +10,9 @@
 
 ### 3. Phân rã chức năng, use case, kịch bản:
 - **Chức năng:** Quản lý sản phẩm, quản lý đơn hàng, quản lý khách hàng, quản lý thanh toán, quản lý chương trình khuyến mãi.
-- **Use case:** Đăng nhập, đăng ký, thêm sản phẩm vào giỏ hàng, thanh toán đơn hàng, theo dõi đơn hàng, tìm kiếm sản phẩm, xem thông tin sản phẩm.
+- **Use case:**
+   - Người dùng: Đăng nhập, đăng ký, thêm sản phẩm vào giỏ hàng, thanh toán đơn hàng, theo dõi đơn hàng, tìm kiếm sản phẩm, xem thông tin sản phẩm.
+   - Quản lý: Khách hàng (Thông tin khách hàng), Shop (Sản phẩm, Đơn hàng, Doanh thu & Thuế), Quản lý sự kiện (Khuyến mãi, Voucher).
 - **Kịch bản:** Người dùng truy cập trang web, duyệt sản phẩm, thêm vào giỏ hàng, thanh toán, nhận xác nhận đơn hàng.
 
 ### 4. Mô hình hóa:
