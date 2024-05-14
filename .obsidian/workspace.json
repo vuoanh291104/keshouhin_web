@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "69310a0e8da65d46",
+    "type": "split",
+    "children": [
+      {
+        "id": "6bc149a616833ada",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "532b5dcbee073aa7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "739b53863d70e799",
+    "type": "split",
+    "children": [
+      {
+        "id": "f127bf6979d2dc36",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73b647fd39dddfdd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8e7baa35fa986d72",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f21b13d2684ec040",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ad3ca1c37b90a9a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "857a34c89e278384",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "807ad22c1307ff04",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bae3f41710d80ade",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "432e2e0a5d0b6cbd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e57b5943df031fc6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Mở bộ chuyển đổi nhanh": false,
+      "graph:Mở xem biểu đồ": false,
+      "canvas:Tạo bảng mới": false,
+      "daily-notes:Mở ghi chú hôm nay": false,
+      "templates:Chèn mẫu": false,
+      "command-palette:Mở khay lệnh": false
+    }
+  },
+  "active": "73b647fd39dddfdd",
+  "lastOpenFiles": [
+    "Assets/img/img_Header/octicon_feed-person-16icon_person.svg",
+    "Assets/img/img_Header/maki_shopicon_cart.svg",
+    "Assets/img/img_Header/Hoshilogo.svg",
+    "Assets/img/img_Header/Groupicon_search.svg",
+    "Assets/img/img_Header/f7_menuicon_menu.svg",
+    "Assets/img/6.png",
+    "Assets/img/img_Header",
+    "Assets/img/5.png",
+    "Assets/img/8.png",
+    "Assets/img/7.png",
+    "Assets/img/4.png",
+    "Assets/img/3.png",
+    "Assets/css/home.css",
+    "Assets/html/Home.html",
+    "Assets/css/main.css",
+    "Assets/style1.css",
+    "Assets/index1.html",
+    "Assets/img",
+    "Assets/html",
+    "Assets/css",
+    "Assets",
+    "_Obsidion/Task/TODO.md",
+    "_Obsidion/GhiChep/Nội dung.md",
+    "_Obsidion/GhiChep/Nội dung 1.md"
+  ]
+}
