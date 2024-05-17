@@ -161,13 +161,13 @@
     background-color: var(--color-white);
     text-align: center;
     width: 21%;
-   
 }
 
 .FSProduct_img {
     width: 80%;
-    height: 240px;
+    max-height: 280px;
     margin-top: 24px;
+    
 }
 .FSProduct_name, 
 .FSProduct_cost {
@@ -224,26 +224,52 @@
     right: 18px;
     width: 62%;
     min-height: 500px;
-    background-color: var(--color-gainsboro-100);
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 23px;
     justify-content: center; 
-    align-items: center; 
     padding: 0 16px;
    
 }
-.B_container_right .item{
-    background: url('../img/Band/romand.jpg')  no-repeat;
-    /* background-color: var(--color-white); */
-    
-    max-width: 184px;
-    height: 210px;
+.B_container_right .item{    
+    max-width: 200px;
+    max-height: 240px;
+    border-radius: var(--br-sizeM);
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
+
 }
 .B_container_right .item1 {
-    background: url('../img/Band/romand.jpg')  /cover no-repeat;
-    
+    background: url('../img/Band/romand.jpg')  no-repeat;
+    background-size: cover;
+}
+.B_container_right .item2 {
+    background: url('../img/Band/merzy.jpg')  no-repeat;
+    background-size: cover;
+}
+.B_container_right .item3 {
+    background: url('../img/Band/cocoon.jpg')  no-repeat;
+    background-size: cover;
+}
+.B_container_right .item4 {
+    background: url('../img/Band/laros.jpg')  no-repeat;
+    background-size: cover;
+}
+.B_container_right .item5 {
+    background: url('../img/Band/diamond.jpg')  no-repeat;
+    background-size: cover;
+}
+.B_container_right .item6 {
+    background: url('../img/Band/Versace.jpg')  no-repeat;
+    background-size: cover;
+}
+.B_container_right .item7 {
+    background: url('../img/Band/DHC.jpg')  no-repeat;
+    background-size: cover;
+}
+.B_container_right .item8 {
+    background: url('../img/Band/SomeByMi.jpg')  no-repeat;
+    background-size: cover;
 }
 
 /* See more */
