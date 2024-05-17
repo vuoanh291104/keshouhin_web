@@ -1,15 +1,15 @@
 /* header */
-.hearder{
+.hearder {
     position: relative;
     display: flex;
 }
-.hearder .head_top{
+.hearder .head_top {
     top: 0;
     left: 0;
     position: absolute;
     width: 100%;
 }
-.head_top, .nav{
+.head_top, .nav {
     height: 80px;
     background-color: var(--color-lightpink);
 
@@ -19,44 +19,53 @@
 .main_container .body {
     display: flex;
     flex-direction: row;
-    padding: 46px;
+    padding: 28px;
 }
-.body .body_right{
+.body .body_right {
     
     display: flex;
     margin-left: auto;
+    justify-content: center;
+    align-items:center;
 }
 .body_right .search {
+    position: relative;
     width: 360px;
     height: 60px;
     border-radius: 50px;
     border: 2.5px solid var(--color-lightcoral);
     background: var(--color-white);
+    margin-right: 8px;
     
 }
  .icon_search {
-    padding: 8px 16px;
+    margin: 4px;
+    padding: 10px 16px;
 }
  .searchBox {
-    font-size: 16px;
+    position: absolute;
+    top:18px;
+    font-size: 18px;
     height: 24px;
     border: 0;
     outline: none;
     box-shadow: none;
     
 }
-
+.icon_mainHeader {
+    padding: 8px;
+}
 
 .nav ul {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.nav li{
+.nav li {
     line-height: 80px;
 }
 
-.nav li>a{
+.nav li>a {
     text-transform: uppercase;
     margin: 44px;
     text-decoration: none;
@@ -65,7 +74,258 @@
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #FFF;
     font-size: 25px;
-    font-weight: 1000;
+    font-weight: bold;
     
     letter-spacing: 2.5px;
+}
+
+
+/* slider */
+
+.slider {
+    margin: 46px 45px;
+    
+}
+.slider .img_slider {
+    width: 100%;
+}
+
+/* main FlashSale + Band */
+.head_name{
+    display: flex;
+    padding-top: 16px;
+}
+
+.contect {
+    margin: 0 46px;
+    width: 95%;
+    height: 600px;
+    background-color: var(--color-lightpink);  
+}
+.leftName{
+    color: var(--color-white);
+    font-family: var(--font-be-vietnam);
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 90px;
+    text-transform: uppercase;
+    margin-left: 16px;    
+}
+.h_right {
+    margin-left: auto;
+    line-height: 90px;
+    font-family: var(--font-be-vietnam);
+    font-size: 24px;    
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-right: 36px;  
+}
+.h_right a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.fSale_left 
+,.Band_left{
+    display: flex;
+    margin-left: 46px;
+}
+
+.Band_left_name {
+    margin-left: 90px;
+}
+
+/* FLASH SALES */
+.flashSale{
+    margin-bottom: 85px;
+}
+
+.flashsale_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 28px 0;
+    position: relative;
+    justify-content: space-between;
+    max-height: 424px;
+}
+.flashsale_container .FSProduct:nth-child(4) {
+    margin-right: 64px;
+}
+.flashsale_container .FSProduct:first-child {
+    margin-left: 64px;
+}
+ .FSProduct {
+    background-color: var(--color-white);
+    text-align: center;
+    width: 21%;
+   
+}
+
+.FSProduct_img {
+    width: 80%;
+    height: 240px;
+    margin-top: 24px;
+}
+.FSProduct_name, 
+.FSProduct_cost {
+    text-align: left;
+    margin: 16px 26px;
+    font-family: var(--font-be-vietnam);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+}
+.percent {
+    border-radius: var( --br-sizeM);
+    background-color: var(--color-gainsboro-100);
+    width: 80%;
+    margin: 26px;
+}
+.icon_left {
+    position: absolute;
+    top: 212px;
+    width: 10%;
+    
+}
+.icon_right {
+    position: absolute;
+    top: 212px;
+    right: 0px;
+}
+
+.Band_container {
+    display: inline-block;
+    background-color: var(--color-white);
+    width: 95%;
+    max-height: 600px;
+    border-radius: var(--br-sizeS);
+    margin: 0 42px;
+    position: relative;
+}
+.B_container_left {
+    border-radius: var(--br-sizeM);
+    background-color: var(--color-gainsboro-100);
+    min-height: 500px;
+    width: calc(95%/3);
+    margin-left: 12px;
+    text-align: center;
+    background: url('../img/Band/left_band.png')  no-repeat;
+    margin: 18px 26px;
+}
+.band {
+    height: 700px;
+}
+.B_container_right {
+    position: absolute;
+    top:18px;
+    right: 18px;
+    width: 62%;
+    min-height: 500px;
+    background-color: var(--color-gainsboro-100);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 16px;
+   
+}
+.B_container_right .item{
+    background: url('../img/Band/romand.jpg')  no-repeat;
+    /* background-color: var(--color-white); */
+    
+    max-width: 184px;
+    height: 210px;
+}
+.B_container_right .item1 {
+    background: url('../img/Band/romand.jpg')  /cover no-repeat;
+    
+}
+
+/* See more */
+
+.SeeMoreContainer {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    
+}
+.SeeMoreBox {
+    line-height: 46px;
+    width: 20%;
+    height: 46px;
+    text-align: center;
+    font-family: var(--font-be-vietnam);
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    border: 2.5px solid var(--color-lightpink);
+    border-radius: var(--br-sizeL);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 23px;
+}
+.SeeMoreBox a {
+    text-decoration: none;
+    color: var(--color-lightpink);
+}
+
+/* Footer */
+#footer {
+    align-items: center;
+    background-color: var(--color-lightpink);
+    height: 380px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone_name,
+.mail_name,
+.Contact_ifor_head, 
+.contact_withUs {
+    color: var(--color-white);
+    font-family: var(--font-be-vietnam);
+    font-size: 30px;
+    letter-spacing: 2.5px;
+    padding: 23px;
+    
+}
+.Contact_ifor_head,
+.phone_name,
+.mail_name {
+    margin-left: 46px;
+}
+.Contact_ifor_head, 
+.contact_withUs {
+    text-transform: uppercase;
+}
+.phone_name,
+.mail_name {
+    font-size:medium;
+    font-size: 25px;
+}
+.phone,
+.mail {
+    
+    color: var(--color-white);
+    text-decoration: none;
+}
+.contact_withUs,
+.fb,
+.insta,
+.tiktok {
+    margin-right: 46px;
+}
+
+
+
+.fb {
+    margin-left: 64px;
 }
