@@ -1,0 +1,93 @@
+.about_page {
+    width: 100%;
+}
+.about {
+    max-width: 1440px;
+    margin-left: 46px;
+}
+.about-us {
+    font-weight: bold;
+    position: absolute;
+    top: 46px;
+    left: 12px;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 322px;
+    height: 92px;
+  }
+  .about-child,
+  .about-item {
+    position: absolute;
+    border-radius: var(--br-sizeM);
+  }
+  .about-child {
+    bottom: 62px;
+    left: 46px;
+    background-color: #ffc5c1;
+    width: 1348px;
+    height: 828px;
+  }
+  .about-item {
+    bottom: 108px;
+    left: 92px;
+    width: 552px;
+    height: 736px;
+    object-fit: cover;
+  }
+  .cm-n-qu,
+  .hoshi-l-ca {
+    margin-block-start: 0;
+    margin-block-end: 1.6px;
+    letter-spacing: 0.2em;
+  }
+  .cm-n-qu {
+    letter-spacing: 0.15em;
+  }
+  .hoshi-l-ca-container1 {
+    width: 100%;
+    line-height: 1.6;
+  }
+  .hoshi-l-ca-container {
+    
+    position: absolute;
+    bottom: 108px;
+    left: 759px;
+    font-size: 30px;
+    font-family: var(--font-be-vietnam);
+    color: var(--color-white);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 575px;
+    height: 736px;
+  }
+  .material-symbols-lightcircle-icon {
+    margin-bottom: 46px;
+  }
+  
+  .material-symbols-lightcircle-icon,
+  .material-symbols-lightcircle-icon1 {
+    position: absolute;
+    bottom: 721px;
+    left: 690px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .material-symbols-lightcircle-icon1 {
+    bottom: 482px;
+  }
+  .about {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 1055px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 46px;
+    color: #ff9689;
+    font-family: var(--font-be-vietnam);
+  }
+  
