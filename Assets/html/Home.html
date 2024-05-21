@@ -6,10 +6,12 @@
     <title>Hoshi</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/logIn.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
+    <script src="../JS/login.js"></script>
     <script src="../JS/home.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +22,24 @@
 
 </head>
 <body>
-    
+    <div id="signIn" class="main">
+        <div class="oriBg">
+            <div class="boxSignIn">
+                <div class="userName info">
+                    <div class="txtInfo">User name:</div>
+                    <input id="txtUserName" type="text">
+                </div>
+                <div class="pass info">
+                    <div class="txtInfo">Password:</div>
+                    <input id="txtPassword" type="password">
+                </div>
+                <div class="btn">
+                    <button id="btnOK">OK</button>
+                    <button id="btnCancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- this is Header -->
     <header class="header fixed">
         <div class="head_top"></div>
@@ -35,9 +54,11 @@
                         <img class="icon_search" src="../img/img_Header/Groupicon_search.svg" alt="search">
                         <input class="input searchBox" type="text" placeholder=" Nhập tên sản phẩm... " >
                     </div>
-                    <div class="body_right_img">
-                        <img class="icon_mainHeader" src="../img/img_Header/maki_shopicon_cart.svg" alt="cart">
+                    <div id="body_right_img">
+                        <div id="iconID">
+                            <img class="icon_mainHeader" src="../img/img_Header/maki_shopicon_cart.svg" alt="cart">
                         <img class="icon_mainHeader" src="../img/img_Header/octicon_feed-person-16icon_person.svg" alt="person">
+                        </div>
                     </div>
                 </div>
                 

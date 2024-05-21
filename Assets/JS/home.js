@@ -47,5 +47,12 @@ $(document).ready(function() {
     });
       
 });
-  
+
+document.addEventListener('DOMContentLoaded',(event)=>{
+  const btnSignIn = document.getElementById('iconID')
+  const signIn = document.getElementById('signIn')
+  btnSignIn.addEventListener('click',()=>{
+    signIn.style.display = 'block'
+  })
+})
 
