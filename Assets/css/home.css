@@ -2,6 +2,7 @@
 .hearder {
     position: relative;
     display: flex;
+    
 }
 .hearder .head_top {
     top: 0;
@@ -12,16 +13,33 @@
 .head_top, .nav {
     height: 80px;
     background-color: var(--color-lightpink);
-
 }
 
 
-.main_container .body {
+
+.bodyhead {
     display: flex;
     flex-direction: row;
     padding: 28px;
 }
-.body .body_right {
+.addBodyScroll {
+    background-color: var(--color-white);
+    top:80px;
+    display: none;
+    width: 100%;
+    height: 177px;
+    z-index: 1;
+    
+}
+.add {
+    display: block;
+}
+.cut {
+    display: none;
+}
+
+
+.bodyhead .body_right {
     
     display: flex;
     margin-left: auto;
@@ -55,11 +73,24 @@
 .icon_mainHeader {
     padding: 8px;
 }
+
+
 .navScroll {
     position: fixed;
-    top: 0;
+    /* top: 0; */
     left: 0;
     width: 100%;
+    z-index: 2;
+    animation: moveNav .3s forwards;
+
+}
+
+@keyframes moveNav {
+    from {
+        top: 275px;
+    }to{
+        top:0;
+    }
 }
 .nav >ul {
     display: flex;

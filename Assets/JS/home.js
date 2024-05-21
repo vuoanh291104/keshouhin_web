@@ -28,3 +28,24 @@ $(document).ready(function() {
     });
   });
 
+  $(document).ready(function(){
+    $(window).scroll(function(){
+        var mainHeadElement= $('.bodyhead');
+        var BodyScrollElement = $('.addBodyScroll')
+        var navElement= $('.nav');
+        if($(this).scrollTop()){   
+            navElement.addClass('navScroll'); 
+            BodyScrollElement.addClass('add'); 
+            mainHeadElement.addClass('cut');
+        }else{
+            navElement.removeClass('navScroll');
+            BodyScrollElement.removeClass('add');
+            mainHeadElement.removeClass('cut');
+            
+             
+        }
+    });
+      
+});
+  
+

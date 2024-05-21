@@ -1,0 +1,67 @@
+.Time {}
+.TimeHeader {
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+.TimeHeader .name {
+    color: var(--color-lightcoral);
+    font-family: var(--font-be-vietnam);
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.countDown {
+    background-color: var(--color-lightpink);
+    height: 46px;
+    width: 10%;
+}
+
+
+
+.timeUpdate {
+    display: flex;
+    padding: 0 100px;
+    text-align: center;
+}
+.timeNow {
+    width: 50%;
+    height: 115px;
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid var(--color-lightcoral);
+    background: rgba(255, 197, 193, 0.00);
+}
+.timeNext {
+    width: 50%;
+    height: 118px;
+    border-radius: 0px 10px 10px 0px;
+    background: var(--color-pink);
+}
+.timeNow_set,
+.timeNow_p {
+    color: rgba(0, 0, 0, 0.58);
+    font-family: var(--font-be-vietnam); 
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.timeNext_set,
+.timeNext_p {
+    color: var(--color-white);
+    font-family: var(--font-be-vietnam);
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.timeNow_set,
+.timeNext_set {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.timeNow_p,
+.timeNext_p {
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.productsContainer {
+    
+}
