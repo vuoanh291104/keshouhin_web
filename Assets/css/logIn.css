@@ -1,0 +1,77 @@
+.main{
+    width: 100vw;
+    display: none;
+    left: 0;
+    top: 0px;
+    position: fixed;
+    z-index: 10;
+}
+.oriBg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(130, 125, 130, 0.8);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    
+}
+.boxSignIn{
+    width: 650px;
+    height: 300px;
+    position: absolute;
+    top: 25%;
+    background: white;
+    align-content: center;
+    border-radius: var(--br-sizeS);
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+
+}
+.info input{
+    width: 350px;
+    height: 36px;
+    border-radius: var(--br-sizeS);
+    font-family: var(--font-be-vietnam);
+    border-color: var(--color-lightcoral);
+    outline: none;
+    box-shadow: none;
+    border-style: solid;
+    padding: 0px 22px;
+    font-size: 24px;
+    margin-right: 40px;
+}
+.txtInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    color: var(--color-lightpink);
+    font-size: 24px;
+    font-family: var(--font-be-vietnam);
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.btn button{
+    margin: 0px 24px;
+    width: 84px;
+    height: 32px;
+    font-size: 14px;
+    background: var(--color-lightpink);
+    border: none;
+    color: var(--color-white);
+    border-radius: 7px;
+}
+.btn button:hover{
+    background: var(--color-lightcoral);
+}
