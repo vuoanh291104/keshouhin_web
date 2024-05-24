@@ -156,3 +156,7 @@ hr{
 .menu ul li:hover{
     border-bottom: 1px solid orange;
 }
+
+.gia button:hover{
+    color: #faebd7
+}
