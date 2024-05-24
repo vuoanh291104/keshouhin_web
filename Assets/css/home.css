@@ -26,21 +26,6 @@ body{
     flex-direction: row;
     padding: 28px;
 }
-.addBodyScroll {
-    background-color: var(--color-white);
-    top:80px;
-    display: none;
-    width: 100%;
-    height: 177px;
-    z-index: 1;
-    
-}
-.add {
-    display: block;
-}
-.cut {
-    display: none;
-}
 
 
 .bodyhead .body_right {
@@ -77,25 +62,21 @@ body{
 .icon_mainHeader {
     padding: 8px;
 }
-
-
-.navScroll {
-    position: fixed;
-    /* top: 0; */
-    left: 0;
+.navigation {
+    position: absolute;
+    height: 100%;
+    top:250px;
     width: 100%;
+    
+}
+.nav {
+    position: sticky;
+    left: 0;
+    top: 0;
     z-index: 2;
-    animation: moveNav .3s forwards;
-
 }
 
-@keyframes moveNav {
-    from {
-        top: 275px;
-    }to{
-        top:0;
-    }
-}
+
 .nav >ul {
     display: flex;
     width: 100%;
@@ -194,7 +175,9 @@ body{
 /* slider */
 
 .slider {
-    margin: 46px 45px;
+    margin: 150px 45px 64px;
+    
+    
     
 }
 .slider .img_slider {
@@ -415,6 +398,8 @@ body{
 
 /* Footer */
 #footer {
+    position: absolute;
+    
     align-items: center;
     background-color: var(--color-lightpink);
     height: 380px;
