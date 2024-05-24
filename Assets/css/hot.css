@@ -59,6 +59,7 @@
     font-family: var(--font-be-vietnam);
     word-spacing: 10%;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 #choose input{
     width: 14px;
