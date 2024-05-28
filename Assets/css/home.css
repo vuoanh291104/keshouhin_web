@@ -67,15 +67,15 @@ body{
     height: 100%;
     top:250px;
     width: 100%;
-    
+    pointer-events: none;
 }
 .nav {
     position: sticky;
     left: 0;
-    top: 0;
-    z-index: 2;
+    top: -0.5px;
+    z-index: 1;
+    pointer-events: auto;
 }
-
 
 .nav >ul {
     display: flex;
@@ -170,12 +170,16 @@ body{
     font-weight: bold;
     font-size: 22px;
 }
+/* main */
+main {
+    margin: 100px 0 46px;
 
+}
 
 /* slider */
 
 .slider {
-    margin: 150px 45px 64px;
+    margin: 150px 45px 64px ;
     
     
     

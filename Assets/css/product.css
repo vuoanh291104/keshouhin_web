@@ -1,0 +1,36 @@
+
+
+.productCost,
+.productName {
+    color: black;
+    font-family: var(--font-be-vietnam);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    align-items: center;
+    margin-left: 40px;
+    padding: 12px 0;
+}
+.addToCart {
+    padding-block: 0;
+    padding-inline: 0;
+    border-radius: 10px;
+    background: var(--color-lightpink);
+    height: 48px;
+    border: none;
+    border-radius: var(--br-sizeS);
+    position: absolute;
+    bottom: 24px;
+    left: 32px;
+    width: 80%;
+
+}
+.addToCart_Text {
+    
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-be-vietnam);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
