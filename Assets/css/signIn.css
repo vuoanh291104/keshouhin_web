@@ -1,9 +1,10 @@
-.rowInfor{
+.rowInfor {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.txtTitle{
+
+.txtTitle {
     font-family: var(--font-be-vietnam);
     width: 256px;
     height: 128px;
@@ -13,7 +14,8 @@
     justify-content: center;
     color: var(--color-lightcoral);
 }
-.myInp{
+
+.myInp {
     font-family: var(--font-be-vietnam);
     width: 856px;
     height: 64px;
@@ -25,40 +27,49 @@
     border-style: solid;
     padding-left: 24px;
 }
-.borRadio{
+
+.borRadio {
     width: 64px;
     height: 64px;
 }
-.select{
+
+.select {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.dkien_csach{
+
+.dkien_csach {
     text-decoration: none;
     color: var(--color-lightcoral);
 }
-.checkDieuKhoan{
+
+.checkDieuKhoan {
     margin-left: 300px;
     margin-top: 56px;
 }
-.gioiTinh{
+
+.gioiTinh {
     justify-content: left;
     padding-left: 24px;
 }
-.chooseGioiTinh{
+
+.chooseGioiTinh {
     padding-left: 120px;
 }
-.btnDangKy{
+
+.btnDangKy {
     width: 256px;
     height: 64px;
     background-color: var(--color-lightcoral);
     color: white;
     border: 0px;
     font-size: 24px;
+    border-radius: 10px;
 }
-.DangKy{
+
+.DangKy {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 5%;
 }
