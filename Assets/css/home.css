@@ -135,6 +135,10 @@ body{
 .navbar .general:hover {
     background-color: var(--color-gainsboro-100);
 }
+.navbar .general li:hover {
+    font-size: 32px;
+    font-weight: 700;
+}
 .navbar .general:hover .general_navbar{
     display: flex;
     
@@ -236,7 +240,7 @@ main {
 }
 
 /* FLASH SALES */
-.flashSale{
+.flashSalee{
     margin-bottom: 85px;
 }
 

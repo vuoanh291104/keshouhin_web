@@ -1,0 +1,137 @@
+[
+ {
+  "ID": 1,
+  "Name": "[NEW][Ver 4] Son Tint Bóng Hàn Quốc Bền Màu, Lâu Trôi Cho Đôi Môi Căng Mọng, Ẩm Mịn Merzy The Watery Dew Tint 4g",
+  "Cost": "249.000",
+  "URLimg": "../img/Product/ProductFS/merzy1.png",
+  "Band": "Merzy",
+  "Type": "son",
+  "About": "[Ver 3] Son Tint Bóng Hàn Quốc Bền Màu, Lâu Trôi Cho Đôi Môi Căng Mọng, Ẩm Mịn Merzy The Watery Dew Tint 4g\n\n- Thương hiệu: Merzy\n\n- Xuất xứ: Hàn Quốc\n\n- Trọng lượng: 4g "
+ },
+ {
+  "ID": 2,
+  "Name": "[NEW][V6 SIREN HOLIDAY] Son Kem Lì Merzy The First Velvet Tint 4.5g",
+  "Cost": "249.000",
+  "URLimg": "../img/Product/ProductFS/merzy2.png",
+  "Band": "Merzy",
+  "Type": "son",
+  "About": "[NEW][V6 SIREN HOLIDAY] Son Kem Lì Merzy The First Velvet Tint 4.5g\n\n\n- Xuất xứ: Hàn Quốc\n\n- Thương hiệu: Merzy\n\n- Trọng lượng: 4.5g"
+ },
+ {
+  "ID": 3,
+  "Name": "[Perfect Fixing] Bút kẻ mắt siêu mảnh, chống lem, lâu trôi Merzy Another Me The First Pen Eyeliner 0,5g",
+  "Cost": "189.000",
+  "URLimg": "../img/Product/ProductFS/merzy3.png",
+  "Band": "Merzy",
+  "Type": "ke mat",
+  "About": "[Perfect Fixing] Bút kẻ mắt siêu mảnh, chống lem, lâu trôi Merzy Another Me The First Pen Eyeliner 0,5g\n\n- Xuất xứ: Hàn Quốc\n\n- Trọng lượng: 0.5g"
+ },
+ {
+  "ID": 4,
+  "Name": "Kem Lót Nâng Tông Làm Sáng Da Merzy The Airy Tone Up Cream SPF 50+\/PA++++ 40ml",
+  "Cost": "219.000",
+  "URLimg": "../img/Product/ProductFS/merzy4.png",
+  "Band": "Merzy",
+  "Type": "kem lot",
+  "About": "Kem Lót Nâng Tông Làm Sáng Da Merzy The Airy Tone Up Cream SPF 50+\/PA++++ 40ml   \n\n- Xuất xứ: Hàn Quốc\n\n- Trọng lượng: 40ml"
+ },
+ {
+  "ID": 5,
+  "Name": "Gel Nhũ Mắt Merzy Windy Pop Eye Glitter 1.9g\n",
+  "Cost": "279.000",
+  "URLimg": "../img/Product/ProductFS/merzy5.png",
+  "Band": "Merzy",
+  "Type": "phan mat",
+  "About": "Gel Nhũ Mắt Merzy Windy Pop Eye Glitter 1.9g\n\n- Xuất xứ: Hàn Quốc\n\n- Thương hiệu: Merzy\n\n- Trọng lượng: 1.9g"
+ },
+ {
+  "ID": 6,
+  "Name": "Nước tẩy trang và làm sạch sâu 3-in-1 L'Oreal Paris Micellar Water 400ml",
+  "Cost": "229.000",
+  "URLimg": "../img/Product/ProductFS/loreal1.png",
+  "Band": "Loreal",
+  "Type": "tay trang",
+  "About": "NƯỚC LÀM SẠCH VÀ TẨY TRANG LOREAL REVITALIFT CRYSTAL PURIFYING MICELLAR WATER\n\nBao bì thay đổi theo từng đợt nhập hàng.\n\nChất liệu: nước tẩy trang\n\nTrọng lượng\/kích thước 400ml"
+ },
+ {
+  "ID": 7,
+  "Name": "Bộ Serum & Kem ngày & Kem đêm sáng da tức thì Glycolic Bright L'Oreal Paris\n\n",
+  "Cost": "869.000",
+  "URLimg": "../img/Product/ProductFS/loreal2.png",
+  "Band": "Loreal",
+  "Type": "serum",
+  "About": "01 x Serum Glycolic Bright L'Oreal Paris 30ml\n01 x Kem dưỡng ngày Glycolic Bright L'Oreal Paris 15ml\n01 x Kem dưỡng đêm Glycolic Bright L'Oreal Paris 15ml\nViện Nghiên cứu L’Oréal Paris giới thiệu Dưỡng chất (serum) sáng da tức thì L'ORÉAL PARIS GLYCOLIC-BRIGHT INSTANT GLOWING SERUM với công thức chứa 1.0% Glycolic Acid. Sản phẩm được chứng minh làm sáng da tức thì, giảm các vết thâm nám. Được kiểm nghiệm bởi chuyên gia trên làn da Châu Á. \nSẢN PHẨM CÓ NỒNG ĐỘ GLYCOLIC ACID CAO NHẤT TỪ L'ORÉAL PARIS – 1.0%  \nGlycolic Acid được biết đến có trọng lượng phân tử nhỏ nhất trong nhóm AHA, giúp thẩm thấu sâu hơn và làm sạch tế bào da chết nhẹ nhàng trên bề mặt da giúp hỗ trợ quá trình tái tạo da, cho làn da trông tươi sáng, rạng rỡ hơn. \nXuất xứ: Trung Quốc \nHSD: 3 năm kể từ ngày sản xuất \nNSX: Xem trên bao bì\""
+ },
+ {
+  "ID": 8,
+  "Name": "Sữa Rửa Mặt Làm Sạch Và Săn Chắc Da L’Oreal Paris Revitalift 100ml",
+  "Cost": "199.000",
+  "URLimg": "../img/Product/ProductFS/loreal3.png",
+  "Band": "Loreal",
+  "Type": "sua rua mat",
+  "About": "Sữa rửa mặt làm sạch và săn chắc da L'Oreal Paris Revitalift 100ml thuộc dòng Revitalift được nghiên cứu bởi viện nghiên cứu L'oreal Paris, mang lại hiệu quả cao trong việc rửa sạch và nuôi dưỡng làn da sáng, khỏe mạnh mỗi ngày. Thành phần BHA đã được nghiên cứu giúp làn da luôn săn chắc và chống lão hóa hoàn hảo đồng thời Glycerin giúp da luôn mềm mượt, ẩm mịn."
+ },
+ {
+  "ID": 9,
+  "Name": "Son Kem Lì, Mịn Mượt Nhẹ Môi L’Oreal Paris Chiffon Signature Matte Liquid Lipstick 7ml",
+  "Cost": "249.000",
+  "URLimg": "../img/Product/ProductFS/loreal4.png",
+  "Band": "Loreal",
+  "Type": "son",
+  "About": "Son Kem Lì, Mịn Mượt Nhẹ Môi L’Oreal Paris Chiffon Signature Matte Liquid Lipstick 7ml là son kem đến từ thương hiệu L'Oreal có kết cấu son mỏng, lên môi nhẹ như không,cho  bạn cảm nhận được độ mềm mại, mịn màng như nhung ở trên môi trong suốt thời gian dài. Son lên màu cực chuẩn ngay từ lần thoa đầu tiên và giữ màu lâu đến 8h, giúp đôi môi luôn căng mọng, quyến rũ, cho phái đẹp luôn tự tin, nổi bật mọi lúc mọi nơi."
+ },
+ {
+  "ID": 10,
+  "Name": "Kem Chống Nắng Mịn Nhẹ, Bảo Vệ Da, Ngăn Ngừa Lão Hóa L'Oreal UV Defender Serum Protector SPF 50+\/PA++++\n",
+  "Cost": "379.000",
+  "URLimg": "../img/Product/ProductFS/loreal5.png",
+  "Band": "Loreal",
+  "Type": "kem chong nang",
+  "About": "Kem Chống Nắng Mịn Nhẹ, Bảo Vệ Da, Ngăn Lão Hóa L'Oreal UV Defender Serum Protector 50ml là kem chống nắng với 2 lớp màng bảo vệ (Màng lọc Mexoryl SX và Mexorul XL) giúp bảo vệ da dưới tác động của tia UVA và UVB cả ngày dài. Kết hợp với thành phần Niacinamide có trong kem chống nắng như một lớp thứ 3 bảo vệ hàng rào da, nâng tông tức thì, giảm thâm, hỗ trợ dưỡng trắng hiệu quả thuộc thương hiệu L'Oreal  đến từ Pháp."
+ },
+ {
+  "ID": 11,
+  "Name": "Nước Tẩy Trang Làm Sạch Sâu Garnier Micellar Cleansing Water\n",
+  "Cost": "189.000",
+  "URLimg": "../img/Product/ProductFS/ganier1.png",
+  "Band": "Ganier",
+  "Type": "tay trang",
+  "About": "Nước Tẩy Trang Làm Sạch Sâu Garnier Micellar Cleansing Water là nước tẩy trang với chiết xuất thành phần từ thiên nhiên lành tính có khả năng làm sạch cặn bẩn, tế bào chết và lớp trang điểm đậm, sản phẩm phù hợp với mọi loại da mang đến trải nghiệm tươi mát và dễ chịu thuộc thương hiệu Garnier đến từ Pháp."
+ },
+ {
+  "ID": 12,
+  "Name": "Serum Garnier Tinh Chất Dưỡng Sáng Da, Mờ Thâm Ban Đêm Garnier Skin Naturals Bright Complete Overnight Booster Serum 30ml",
+  "Cost": "349.000",
+  "URLimg": "../img/Product/ProductFS/ganier2.png",
+  "Band": "Ganier",
+  "Type": "serum",
+  "About": "Serum Garnier Tinh Chất Dưỡng Sáng Da, Mờ Thâm Ban Đêm Garnier Skin Naturals Bright Complete Overnight Booster Serum là tinh chất dưỡng da thuộc thương hiệu Garnier chứa 10% Vitamin C nguyên chất từ thành phần thiên nhiên cùng Hyaluronic Acid giúp bổ sung độ ẩm, dưỡng da sáng khỏe, giảm và ngừa thâm hiệu quả mang lại làn da căng mướt, sáng mịn, đều màu."
+ },
+ {
+  "ID": 13,
+  "Name": "Sữa Rửa Mặt Tạo Bọt Hỗ Trợ Dưỡng Sáng Da Garnier Light Complete Brightening Whip Foam 100ml",
+  "Cost": "119.000",
+  "URLimg": "../img/Product/ProductFS/ganier3.png",
+  "Band": "Ganier",
+  "Type": "sua rua mat",
+  "About": "Sữa Rửa Mặt Tạo Bọt Hỗ Trợ Dưỡng Sáng Da Garnier Light Complete Brightening Whip Foam 100ml là sữa rửa mặt thuộc thương hiệu Garnier là sự hòa quyện giữa Vitamin C và tinh chất Chanh Yuzu giúp hỗ trợ dưỡng da trắng sáng đều màu. Sữa rửa mặt có độ pH chuẩn cùng với những hạt bọt xốp giúp làm sạch sâu nhưng vẫn làm da mềm mại mà không bị khô căng sau khi rửa. Phù hợp với mọi loại da kể cả làn da nhạy cảm.\n\n"
+ },
+ {
+  "ID": 14,
+  "Name": "Mặt Nạ Tinh Chất Dưỡng Ẩm, Làm Sáng Da, Ngăn Ngừa Thâm Nám Garnier Skin Naturals Ampoule Mask - WATERMELON 15g\n",
+  "Cost": "40.000",  
+  "URLimg": "../img/Product/ProductFS/ganier4.png",
+  "Band": "Ganier",
+  "Type": "mat na",
+  "About": "Mặt Nạ Tinh Chất Dưỡng Ẩm, Làm Sáng Da, Ngăn Ngừa Thâm Nám Garnier Skin Naturals Ampoule Mask là mặt nạ giấy thuộc thương hiệu Garnier. Mặt nạ tinh chất cô đặc có tác dụng nhanh giúp làm sáng và tái tạo năng lượng, cân bằng và phục hồi, hoặc làm mịn và căng mọng chỉ trong 5 phút. Với chất chống oxy hóa và nước chống lại các gốc tự do, tăng sản sinh collagen, ức chế tăng sinh hắc sắc tố.\n\n"
+ },
+ {
+  "ID": 15,
+  "Name": "Mặt Nạ Ngủ Tinh Chất Sữa Chua Dưỡng Trắng Da Garnier Light Complete Yoghurt Sleeping Mask",
+  "Cost": "209.000" ,
+  "URLimg": "../img/Product/ProductFS/ganier5.png",
+  "Band": "Ganier",
+  "Type": "kem duong",
+  "About": "Mặt Nạ Ngủ Tinh Chất Sữa Chua Dưỡng Trắng Da Garnier Light Complete Yoghurt Sleeping Mask là mặt nạ ngủ thuộc thương hiệu Garnier là sự hòa quyện từ Vitamin C, tinh chất chanh Yuzu và vi sinh sữa chua từ đậu nành giúp nuôi dưỡng làn da trắng sáng, cải thiện các vùng da bị xỉn màu, tẩy tế bào chết dịu nhẹ trong giấc ngủ để cảm nhận làn da trắng hồng căng mọng vào buổi sáng. Phù hợp với mọi loại da kể cả làn da nhạy cảm."
+ }
+]

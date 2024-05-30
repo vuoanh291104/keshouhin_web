@@ -2,7 +2,8 @@
 
 .productCost,
 .productName {
-    color: black;
+    color:rgba(0, 0, 0, 0.58);
+    
     font-family: var(--font-be-vietnam);
     font-size: 20px;
     font-weight: bold;
@@ -10,7 +11,17 @@
     align-items: center;
     margin-left: 40px;
     padding: 12px 0;
+    max-width: 300px;
+    height: 30px;
+    overflow: hidden; /* Ẩn phần văn bản tràn ra ngoài */
+    display: -webkit-box; /* Sử dụng Flexbox để bố trí văn bản */
+    -webkit-box-orient: vertical; /* Đặt hướng cho Flexbox */
+    -webkit-line-clamp: 2; /* Giới hạn số dòng hiển thị */
+
+    white-space: normal; /* Cho phép xuống dòng */
+   
 }
+
 .addToCart {
     padding-block: 0;
     padding-inline: 0;
@@ -33,4 +44,24 @@
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
+}
+
+
+.productItem{
+    background-color: var(--color-light-pr);
+    /* width:  95%; */
+    max-width: 430px;
+    height: 600px;
+    position: relative;
+    margin-bottom: 46px;
+    
+}
+.productImg {
+    background-image: url('../img/Product/ProductFS/ganier1.png');
+    background-repeat: no-repeat;  
+    background-size: cover;
+    max-width: 340px;
+    height: 350px;
+    margin: 32px 40px 8px ;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
 }
