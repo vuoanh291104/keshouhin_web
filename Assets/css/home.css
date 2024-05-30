@@ -1,4 +1,4 @@
-body{
+body {
     position: relative;
 }
 
@@ -6,15 +6,18 @@ body{
 .hearder {
     position: relative;
     display: flex;
-    
+
 }
+
 .hearder .head_top {
     top: 0;
     left: 0;
     position: absolute;
     width: 100%;
 }
-.head_top, .nav {
+
+.head_top,
+.nav {
     height: 80px;
     background-color: var(--color-lightpink);
 }
@@ -29,12 +32,13 @@ body{
 
 
 .bodyhead .body_right {
-    
+
     display: flex;
     margin-left: auto;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
+
 .body_right .search {
     position: relative;
     width: 360px;
@@ -43,32 +47,39 @@ body{
     border: 2.5px solid var(--color-lightcoral);
     background: var(--color-white);
     margin-right: 8px;
-    
+
 }
- .icon_search {
+
+.icon_search {
     margin: 4px;
     padding: 10px 16px;
 }
- .searchBox {
+
+.searchBox {
     position: absolute;
-    top:18px;
+    top: 18px;
     font-size: 18px;
     height: 24px;
     border: 0;
     outline: none;
     box-shadow: none;
-    
+
 }
-.icon_mainHeader {
+
+.icon_mainHeader,
+.icon_mainHeader1 {
     padding: 8px;
+    cursor: pointer;
 }
+
 .navigation {
     position: absolute;
     height: 100%;
-    top:250px;
+    top: 250px;
     width: 100%;
     pointer-events: none;
 }
+
 .nav {
     position: sticky;
     left: 0;
@@ -77,11 +88,12 @@ body{
     pointer-events: auto;
 }
 
-.nav >ul {
+.nav>ul {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .nav>ul>li {
     line-height: 80px;
 }
@@ -98,52 +110,63 @@ body{
     font-weight: bold;
     letter-spacing: 2.5px;
 }
+
 .icon_menu {
     position: relative;
 }
+
 .icon_menu:hover {
     cursor: pointer;
 }
-.icon_menu:hover .navbar{
+
+.icon_menu:hover .navbar {
     display: block;
 }
+
 .navbar {
     background-color: var(--color-white);
     position: absolute;
-    top:80px;
+    top: 80px;
     left: 0px;
     width: 350px;
     display: none;
-    
+
 }
+
 .navbar a {
     font-size: 20px;
     text-decoration: none;
     color: var(--color-black);
-    
+
 }
+
 .navbar>ul>li {
     line-height: 64px;
     padding: 0 20px;
-    
+
 }
+
 .navbar .icon_more {
     position: absolute;
     right: 10px;
     padding: 16px;
 }
+
 .navbar .general:hover {
     background-color: var(--color-gainsboro-100);
 }
+
 .navbar .general li:hover {
     font-size: 32px;
     font-weight: 700;
 }
-.navbar .general:hover .general_navbar{
+
+.navbar .general:hover .general_navbar {
     display: flex;
-    
+
 }
-.navbar .general .general_navbar{
+
+.navbar .general .general_navbar {
 
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     display: none;
@@ -156,8 +179,9 @@ body{
     left: 350px;
     background-color: var(--color-white);
 }
+
 .general_navbar_left>ul>li,
-.general_navbar_right>ul>li{
+.general_navbar_right>ul>li {
     line-height: 46px;
     padding-left: 23px;
     font-size: 20px;
@@ -165,15 +189,18 @@ body{
 
 .general_navbar_right {
     margin-right: 90px;
-    
+
 }
+
 .general_navbar_left {
     margin-left: 46px;
 }
+
 .general_navbar p {
     font-weight: bold;
     font-size: 22px;
 }
+
 /* main */
 main {
     margin: 100px 0 46px;
@@ -183,17 +210,18 @@ main {
 /* slider */
 
 .slider {
-    margin: 150px 45px 64px ;
-    
-    
-    
+    margin: 150px 45px 64px;
+
+
+
 }
+
 .slider .img_slider {
     width: 100%;
 }
 
 /* main FlashSale + Band */
-.head_name{
+.head_name {
     display: flex;
     padding-top: 16px;
 }
@@ -202,9 +230,10 @@ main {
     margin: 0 46px;
     width: 95%;
     height: 600px;
-    background-color: var(--color-lightpink);  
+    background-color: var(--color-lightpink);
 }
-.leftName{
+
+.leftName {
     color: var(--color-white);
     font-family: var(--font-be-vietnam);
     font-size: 50px;
@@ -212,25 +241,27 @@ main {
     letter-spacing: 5px;
     line-height: 90px;
     text-transform: uppercase;
-    margin-left: 16px;    
+    margin-left: 16px;
 }
+
 .h_right {
     margin-left: auto;
     line-height: 90px;
     font-family: var(--font-be-vietnam);
-    font-size: 24px;    
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 2.4px;
     text-transform: uppercase;
-    margin-right: 36px;  
+    margin-right: 36px;
 }
+
 .h_right a {
     text-decoration: none;
     color: var(--color-white);
 }
 
-.fSale_left 
-,.Band_left{
+.fSale_left,
+.Band_left {
     display: flex;
     margin-left: 46px;
 }
@@ -240,7 +271,7 @@ main {
 }
 
 /* FLASH SALES */
-.flashSalee{
+.flashSalee {
     margin-bottom: 85px;
 }
 
@@ -253,13 +284,16 @@ main {
     justify-content: space-between;
     max-height: 424px;
 }
+
 .flashsale_container .FSProduct:nth-child(4) {
     margin-right: 64px;
 }
+
 .flashsale_container .FSProduct:first-child {
     margin-left: 64px;
 }
- .FSProduct {
+
+.FSProduct {
     background-color: var(--color-white);
     text-align: center;
     width: 21%;
@@ -269,9 +303,10 @@ main {
     width: 80%;
     max-height: 280px;
     margin-top: 24px;
-    
+
 }
-.FSProduct_name, 
+
+.FSProduct_name,
 .FSProduct_cost {
     text-align: left;
     margin: 16px 26px;
@@ -280,18 +315,21 @@ main {
     font-weight: 400;
     letter-spacing: 1.6px;
 }
+
 .percent {
-    border-radius: var( --br-sizeM);
+    border-radius: var(--br-sizeM);
     background-color: var(--color-gainsboro-100);
     width: 80%;
     margin: 26px;
 }
+
 .icon_left {
     position: absolute;
     top: 212px;
     width: 10%;
-    
+
 }
+
 .icon_right {
     position: absolute;
     top: 212px;
@@ -307,6 +345,7 @@ main {
     margin: 0 42px;
     position: relative;
 }
+
 .B_container_left {
     border-radius: var(--br-sizeM);
     background-color: var(--color-gainsboro-100);
@@ -314,15 +353,17 @@ main {
     width: calc(95%/3);
     margin-left: 12px;
     text-align: center;
-    background: url('../img/Band/left_band.png')  no-repeat;
+    background: url('../img/Band/left_band.png') no-repeat;
     margin: 18px 26px;
 }
+
 .band {
     height: 700px;
 }
+
 .B_container_right {
     position: absolute;
-    top:18px;
+    top: 18px;
     right: 18px;
     width: 62%;
     min-height: 500px;
@@ -330,47 +371,56 @@ main {
     grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
     gap: 23px;
-    justify-content: center; 
+    justify-content: center;
     padding: 0 16px;
-   
+
 }
-.B_container_right .item{    
+
+.B_container_right .item {
     max-width: 200px;
     max-height: 240px;
     border-radius: var(--br-sizeM);
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
 
 }
+
 .B_container_right .item1 {
-    background: url('../img/Band/romand.jpg')  no-repeat;
+    background: url('../img/Band/romand.jpg') no-repeat;
     background-size: cover;
 }
+
 .B_container_right .item2 {
-    background: url('../img/Band/merzy.jpg')  no-repeat;
+    background: url('../img/Band/merzy.jpg') no-repeat;
     background-size: cover;
 }
+
 .B_container_right .item3 {
-    background: url('../img/Band/cocoon.jpg')  no-repeat;
+    background: url('../img/Band/cocoon.jpg') no-repeat;
     background-size: cover;
 }
+
 .B_container_right .item4 {
-    background: url('../img/Band/laros.jpg')  no-repeat;
+    background: url('../img/Band/laros.jpg') no-repeat;
     background-size: cover;
 }
+
 .B_container_right .item5 {
-    background: url('../img/Band/diamond.jpg')  no-repeat;
+    background: url('../img/Band/diamond.jpg') no-repeat;
     background-size: cover;
 }
+
 .B_container_right .item6 {
-    background: url('../img/Band/Versace.jpg')  no-repeat;
+    background: url('../img/Band/Versace.jpg') no-repeat;
     background-size: cover;
 }
+
 .B_container_right .item7 {
-    background: url('../img/Band/DHC.jpg')  no-repeat;
+    background: url('../img/Band/DHC.jpg') no-repeat;
     background-size: cover;
 }
+
 .B_container_right .item8 {
-    background: url('../img/Band/SomeByMi.jpg')  no-repeat;
+    background: url('../img/Band/SomeByMi.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -380,8 +430,9 @@ main {
     width: 100%;
     height: 100px;
     position: relative;
-    
+
 }
+
 .SeeMoreBox {
     line-height: 46px;
     width: 20%;
@@ -399,6 +450,7 @@ main {
     transform: translateX(-50%);
     margin-top: 23px;
 }
+
 .SeeMoreBox a {
     text-decoration: none;
     color: var(--color-lightpink);
@@ -407,7 +459,7 @@ main {
 /* Footer */
 #footer {
     position: absolute;
-    
+
     align-items: center;
     background-color: var(--color-lightpink);
     height: 380px;
@@ -418,35 +470,40 @@ main {
 
 .phone_name,
 .mail_name,
-.Contact_ifor_head, 
+.Contact_ifor_head,
 .contact_withUs {
     color: var(--color-white);
     font-family: var(--font-be-vietnam);
     font-size: 30px;
     letter-spacing: 2.5px;
     padding: 23px;
-    
+
 }
+
 .Contact_ifor_head,
 .phone_name,
 .mail_name {
     margin-left: 46px;
 }
-.Contact_ifor_head, 
+
+.Contact_ifor_head,
 .contact_withUs {
     text-transform: uppercase;
 }
+
 .phone_name,
 .mail_name {
-    font-size:medium;
+    font-size: medium;
     font-size: 25px;
 }
+
 .phone,
 .mail {
-    
+
     color: var(--color-white);
     text-decoration: none;
 }
+
 .contact_withUs,
 .fb,
 .insta,
@@ -459,9 +516,12 @@ main {
 .fb {
     margin-left: 64px;
 }
+
 .about:visited,
 .about:focus,
 .about:active {
-  background-color: var(--color-lightpink); /* Giữ màu sắc của liên kết không thay đổi */
-  text-decoration: none; /* Xóa gạch chân của liên kết */
+    background-color: var(--color-lightpink);
+    /* Giữ màu sắc của liên kết không thay đổi */
+    text-decoration: none;
+    /* Xóa gạch chân của liên kết */
 }
