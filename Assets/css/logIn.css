@@ -1,4 +1,4 @@
-.main{
+.main {
     width: 100vw;
     display: none;
     left: 0;
@@ -6,7 +6,8 @@
     position: fixed;
     z-index: 10;
 }
-.oriBg{
+
+.oriBg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,25 +16,28 @@
     background-position: center;
     height: 100vh;
     position: relative;
-    
+
 }
-.boxSignIn{
+
+.boxSignIn {
     width: 650px;
-    height: 300px;
+    height: 310px;
     position: absolute;
     top: 25%;
     background: white;
     align-content: center;
     border-radius: var(--br-sizeS);
 }
-.info{
+
+.info {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0px;
 
 }
-.info input{
+
+.info input {
     width: 350px;
     height: 36px;
     border-radius: var(--br-sizeS);
@@ -46,7 +50,8 @@
     font-size: 24px;
     margin-right: 40px;
 }
-.txtInfo{
+
+.txtInfo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,13 +61,15 @@
     font-size: 24px;
     font-family: var(--font-be-vietnam);
 }
-.btn{
+
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
 }
-.btn button{
+
+.btn button {
     margin: 0px 24px;
     width: 84px;
     height: 32px;
@@ -72,6 +79,25 @@
     color: var(--color-white);
     border-radius: 7px;
 }
-.btn button:hover{
+
+.btn button:hover {
     background: var(--color-lightcoral);
+}
+
+.dangKy {
+    width: 100%;
+}
+
+.dangKy p {
+    margin-left: 35%;
+    margin-top: 5%;
+    color: var(--color-lightpink);
+    font-size: 18px;
+}
+
+.dangKy p a {
+    margin-left: 2%;
+    color: var(--color-lightcoral);
+    font-size: 20px;
+    font-weight: bold;
 }
