@@ -1,32 +1,35 @@
-$(document).ready(function() {
-    function loadContent(url) {
-      var mainElement = $('.home_page');
-      mainElement.empty(); // Xóa nội dung hiện tại của phần <main>
+// $(document).ready(function() {
+//     function loadContent(url,callback) {
+//       var mainElement = $('.home_page');
+//       mainElement.empty(); // Xóa nội dung hiện tại của phần <main>
   
-      $.ajax({
-        url: url,
-        dataType: 'html',
-        success: function(data) {
-          mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
-        }
-      });
-    }
+//       $.ajax({
+//         url: url,
+//         dataType: 'html',
+//         success: function(data) {
+//           mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
+//           if (callback) callback();
+//         }
+//       });
+//     }
   
-    $('.about').click(function(event) {
-      event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-      loadContent('About.html');
-    });
+//     $('.about').click(function(event) {
+//       event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+//       loadContent('../html/About.html');
+//     });
   
-    $('.flashSale').click(function(event) {
-      event.preventDefault();
-      loadContent('FlashSales.html');
-    });
+//     $('.flashSale').click(function(event) {
+//       event.preventDefault();
+//       loadContent('../html/FlashSales.html',function(){
+//         $.getScript('../JS/FS.js'); 
+//       });
+//     });
   
-    $('.hot').click(function(event) {
-      event.preventDefault();
-      loadContent('Hot.html');
-    });
-  });
+//     $('.hot').click(function(event) {
+//       event.preventDefault();
+//       loadContent('../html/Hot.html');
+//     });
+//   });
 
 //   $(document).ready(function(){
 //     $(window).scroll(function(){
@@ -55,5 +58,52 @@ document.addEventListener('DOMContentLoaded',(event)=>{
     signIn.style.display = 'block'
   })
 })
+
+
+
+$(document).ready(function() {
+  function loadContent(url, callback) {
+      var mainElement = $('.home_page');
+      mainElement.empty(); // Xóa nội dung hiện tại của phần <main>
+
+      $.ajax({
+          url: url,
+          dataType: 'html',
+          success: function(data) {
+              mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
+              if (callback) callback();
+          },
+          error: function(xhr, status, error) {
+              console.error('Error loading content:', error);
+          }
+      });
+  }
+
+  $('.about').click(function(event) {
+      event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+      loadContent('About.html');
+  });
+
+  $('.flashSale').click(function(event) {
+      event.preventDefault();
+      loadContent('FlashSales.html', function() {
+          // Tạo thẻ script để tải và thực thi FS.js
+          var script = document.createElement('script');
+          script.src = '../JS/FS.js';
+          script.onload = function() {
+              console.log('FS.js loaded successfully.');
+          };
+          script.onerror = function() {
+              console.error('Failed to load FS.js.');
+          };
+          document.body.appendChild(script);
+      });
+  });
+
+  $('.hot').click(function(event) {
+      event.preventDefault();
+      loadContent('Hot.html');
+  });
+});
 
 
