@@ -83,6 +83,8 @@
 
 
   // Hàm để tải nội dung HTML từ file
+
+
   function loadHTML(url) {
       return fetch(url).then(response => response.text());
   }
@@ -130,3 +132,15 @@
           }
       })
       .catch(error => console.error('Error loading content:', error));
+
+
+
+
+
+     let currentTime = new Date();
+     let hours= currentTime.getHours().toString().padStart(2,'0');
+     let timeNowSet = document.querySelector('.timeNow_set');
+     timeNowSet.textContent = hours+':00';
+     let timeNextSet= document.querySelector('.timeNext_set');
+     let timeCount= Number(hours)+2;
+     timeNextSet.textContent=timeCount+':00';
