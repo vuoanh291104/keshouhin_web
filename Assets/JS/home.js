@@ -71,7 +71,7 @@ $(document).ready(function () {
             dataType: 'html',
             success: function (data) {
                 mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
-                
+
             },
             error: function (xhr, status, error) {
                 console.error('Error loading content:', error);
@@ -87,7 +87,7 @@ $(document).ready(function () {
     $('.flashSale').click(function (event) {
         event.preventDefault();
         loadContent('FlashSales.html');
-        
+
     });
 
     $('.hot').click(function (event) {
