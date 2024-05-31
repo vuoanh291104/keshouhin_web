@@ -63,5 +63,20 @@
 }
 
 .productsContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 64px;
+    justify-content: space-around;
+    width: 87%;
+    margin: 64px 100px 46px 100px;
+}
+.productItem{
+    background-color: var(--color-light-pr);
+    /* width:  95%; */
+    max-width: 430px;
+    height: 600px;
+    position: relative;
+    margin-bottom: 46px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     
 }
