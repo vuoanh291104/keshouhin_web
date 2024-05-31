@@ -4,13 +4,13 @@
 .productName {
     /* color: var(--color-white); */
     
-    font-family: var(--font-nunito);
+    font-family: var(--font-Lora);
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2.4px;
     align-items: center;
     margin-left: 40px;
-    padding: 12px 0;
+    padding-top: 12px;
     max-width: 300px;
     height: 55px;
     overflow: hidden; /* Ẩn phần văn bản tràn ra ngoài */
@@ -27,6 +27,8 @@
 .productName {
     font-weight: 500;
     opacity: 0.7;
+    line-height: 30px;
+    padding-top: 0;
 }
 
 .addToCart {

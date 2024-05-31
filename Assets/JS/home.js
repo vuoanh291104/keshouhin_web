@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 $(document).ready(function () {
-    function loadContent(url, callback) {
+    function loadContent(url) {
         var mainElement = $('.home_page');
         mainElement.empty(); // Xóa nội dung hiện tại của phần <main>
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
             dataType: 'html',
             success: function (data) {
                 mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
-                if (callback) callback();
+                
             },
             error: function (xhr, status, error) {
                 console.error('Error loading content:', error);
@@ -86,18 +86,8 @@ $(document).ready(function () {
 
     $('.flashSale').click(function (event) {
         event.preventDefault();
-        loadContent('FlashSales.html', function () {
-            // Tạo thẻ script để tải và thực thi FS.js
-            var script = document.createElement('script');
-            script.src = '../JS/FS.js';
-            script.onload = function () {
-                console.log('FS.js loaded successfully.');
-            };
-            script.onerror = function () {
-                console.error('Failed to load FS.js.');
-            };
-            document.body.appendChild(script);
-        });
+        loadContent('FlashSales.html');
+        
     });
 
     $('.hot').click(function (event) {

@@ -172,7 +172,7 @@ body {
     display: none;
     flex-direction: row;
     justify-content: space-between;
-    height: 454.222px;
+    height: 455px;
     position: absolute;
     width: 705px;
     top: 0;
@@ -229,7 +229,7 @@ main {
 .contect {
     margin: 0 46px;
     width: 95%;
-    height: 600px;
+    height: 700px;
     background-color: var(--color-lightpink);
 }
 
@@ -297,23 +297,29 @@ main {
     background-color: var(--color-white);
     text-align: center;
     width: 21%;
+    height: 500px;
 }
 
 .FSProduct_img {
     width: 80%;
-    max-height: 280px;
+    max-height: 320px;
     margin-top: 24px;
 
 }
 
 .FSProduct_name,
 .FSProduct_cost {
+    height: 30px;
     text-align: left;
     margin: 16px 26px;
     font-family: var(--font-be-vietnam);
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1.6px;
+}
+
+.FSProduct_cost {
+    height: 40px;
 }
 
 .percent {
