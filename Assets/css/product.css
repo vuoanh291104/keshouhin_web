@@ -2,9 +2,9 @@
 
 .productCost,
 .productName {
-    color:rgba(0, 0, 0, 0.58);
+    /* color: var(--color-white); */
     
-    font-family: var(--font-be-vietnam);
+    font-family: var(--font-nunito);
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2.4px;
@@ -12,14 +12,21 @@
     margin-left: 40px;
     padding: 12px 0;
     max-width: 300px;
-    height: 30px;
+    height: 55px;
     overflow: hidden; /* Ẩn phần văn bản tràn ra ngoài */
     display: -webkit-box; /* Sử dụng Flexbox để bố trí văn bản */
     -webkit-box-orient: vertical; /* Đặt hướng cho Flexbox */
     -webkit-line-clamp: 2; /* Giới hạn số dòng hiển thị */
-
     white-space: normal; /* Cho phép xuống dòng */
    
+}
+.productCost {
+    font-size: 24px;
+    opacity: 0.8;
+}
+.productName {
+    font-weight: 500;
+    opacity: 0.7;
 }
 
 .addToCart {
@@ -36,6 +43,18 @@
     width: 80%;
 
 }
+.addToCart:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, 
+    #feaea7, 
+    #fcdfdd,
+    #f7eceb,
+    #ffffff,
+    );
+    box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.1);
+
+
+}
 .addToCart_Text {
     
     color: var(--color-white);
@@ -47,15 +66,7 @@
 }
 
 
-.productItem{
-    background-color: var(--color-light-pr);
-    /* width:  95%; */
-    max-width: 430px;
-    height: 600px;
-    position: relative;
-    margin-bottom: 46px;
-    
-}
+
 .productImg {
     background-image: url('../img/Product/ProductFS/ganier1.png');
     background-repeat: no-repeat;  
@@ -63,5 +74,5 @@
     max-width: 340px;
     height: 350px;
     margin: 32px 40px 8px ;
-    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
