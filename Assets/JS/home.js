@@ -102,7 +102,7 @@ $(document).ready(function () {
 
     $('.hot').click(function (event) {
         event.preventDefault();
-        loadContent('Hot.html');
+        loadContent('hot.html');
     });
 });
 
