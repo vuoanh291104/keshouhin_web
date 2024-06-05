@@ -12,11 +12,33 @@
     letter-spacing: 5px;
 }
 .countDown {
-    background-color: var(--color-lightpink);
+   
     height: 46px;
-    width: 10%;
+    width: 30%;
+    display: flex;
+    margin-left: 23px;
 }
-
+.countDownHours,
+.countDownMin,
+.countDownSe {
+    background-color: var(--color-lightpink);
+    height: 54px;
+    width: 54px;
+    font-size: 32px;
+    color: var(--color-white);
+    text-align: center;
+    line-height: 54px;
+    font-weight: bold;
+}
+.twoDot {
+    height: 54px;
+    font-size: 32px;
+    color: var(--color-lightpink);
+    text-align: center;
+    line-height: 54px;
+    font-weight: bold;
+    padding: 0 6px;
+}
 
 
 .timeUpdate {

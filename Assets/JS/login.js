@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded',(event)=>{
 
     const txtUserName = document.getElementById('txtUserName')
     const txtPassword = document.getElementById('txtPassword')
-
+    
     const offSignIn = () => signIn.style.display = 'none'
 
     btnOK.addEventListener('click',()=>{
@@ -16,4 +16,5 @@ document.addEventListener('DOMContentLoaded',(event)=>{
         // Xu ly su kien click button Cancel
         offSignIn()
     })
+    
 })

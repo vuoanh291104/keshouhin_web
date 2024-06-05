@@ -78,3 +78,6 @@
     margin: 32px 40px 8px ;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
+.productImg:hover {
+    cursor: pointer;
+}
