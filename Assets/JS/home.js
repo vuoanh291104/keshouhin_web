@@ -94,6 +94,13 @@ $(document).ready(function () {
         event.preventDefault();
         loadContent('hot.html');
     });
+    
+    $('.isClick').click(function(event){
+        event.preventDefault();
+        signIn.style.display='none';
+        loadContent('signIn.html');
+        
+    })
 });
 
 

@@ -1,5 +1,5 @@
 .mainHot{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100%;
     display: flex;
 }
@@ -159,4 +159,24 @@ hr{
 
 .gia button:hover{
     color: #faebd7
+}
+
+
+
+.botRightHot {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 64px 0 46px 5%;
+    
+
+}
+.productItem{
+    background-color: var(--color-light-pr);
+    /* width:  95%; */
+    max-width: 400px;
+    height: 600px;
+    position: relative;
+    margin-bottom: 46px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    
 }
