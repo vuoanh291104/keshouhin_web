@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ab5e9ef0-6829-48c4-91f2-c237d5d6c21b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/JS/FS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JS/FS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JS/hot.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JS/hot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/hot.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/hot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/data/products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/hot.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/hot.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2hUR4j6wOgWrO03P4Lg3XP8UKaj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "OanhChan",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Web/keshouhin_web",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab5e9ef0-6829-48c4-91f2-c237d5d6c21b" name="Changes" comment="" />
+      <created>1717646479624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717646479624</updated>
+      <workItem from="1717646480693" duration="114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

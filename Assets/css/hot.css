@@ -163,7 +163,7 @@ hr{
 
 
 
-.botRightHot {
+.hotProductsContainer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: 64px 0 46px 5%;
@@ -172,7 +172,7 @@ hr{
 }
 .productItem{
     background-color: var(--color-light-pr);
-    /* width:  95%; */
+    border-radius: var(--br-sizeS);
     max-width: 400px;
     height: 600px;
     position: relative;

@@ -106,12 +106,13 @@ Promise.all([loadHTML('../html/Product.html'), loadJSON('../data/products.json')
 
         // Lấy phần tử container
         var productContainer = document.querySelector('.productsContainer');
-
+        var hotProductContainer = document.querySelector('.hotProductsContainer');
+        
         // Lặp qua mỗi object trong mảng products và tạo ra 15 sản phẩm
         for (let i = 0; i < products.length; i++) {
             // Chọn sản phẩm từ JSON theo chỉ số i
-            let product = products[i % products.length];
-
+            let product = products[i];
+            
             // Sao chép phần tử mẫu
             var productItem = productTemplate.cloneNode(true);
 
@@ -126,14 +127,23 @@ Promise.all([loadHTML('../html/Product.html'), loadJSON('../data/products.json')
             // Cập nhật phần tử productName
             var productName = productItem.querySelector('.productName');
             productName.textContent = product.Name;
-
-            // Thêm productItem vào productContainer
-            productContainer.appendChild(productItem);
+            if (product.Tag =="hot") {
+                
+                hotProductContainer.appendChild(productItem);
+            }
+            else if (product.Tag =="fs" ) {
+                
+                productContainer.appendChild(productItem);
+            } 
+            
+            
         }
+        
     })
     .catch(error => console.error('Error loading content:', error));
 
-
+    
+   
 
 
 
