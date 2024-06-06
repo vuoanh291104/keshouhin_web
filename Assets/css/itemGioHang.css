@@ -1,4 +1,24 @@
-.item{
+body {
+    width: 100vw;
+    height: 100vw;
+}
+
+.item {
     width: 100%;
     height: max-content;
+    display: flex;
+    position: relative;
+}
+
+.item input {
+    position: absolute;
+    left: 0px;
+}
+
+.center {
+    position: absolute;
+    right: 0px;
+    width: 80%;
+    height: max-content;
+    background-color: aqua;
 }
