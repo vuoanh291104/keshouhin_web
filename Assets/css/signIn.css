@@ -1,3 +1,11 @@
+.signIn_Head {
+    padding: 70px 0;
+    text-align: center;
+    font-size: 80px;
+    color: var(--color-lightpink);
+    font-weight: 700;
+
+}
 .rowInfor {
     display: flex;
     flex-direction: row;

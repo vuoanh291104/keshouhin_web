@@ -101,3 +101,16 @@
     font-size: 20px;
     font-weight: bold;
 }
+#signIn {
+    animation: modalFadeIn ease .5s;
+}
+@keyframes modalFadeIn {
+    from{
+      opacity: 0;
+      transform: translateY(-140px);
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }

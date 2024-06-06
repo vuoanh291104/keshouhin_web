@@ -1,0 +1,29 @@
+.txtAllP a{
+    color: var(--color-lightcoral);
+    font-size: 46px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-be-vietnam);
+    margin-left: 80px;
+}
+
+.allProductsContainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* width: 100%; */
+    /* column-gap: 5%; */
+    
+    margin: 60px 0 46px 3.5%;
+    
+
+}
+.productItem{
+    background-color: var(--color-light-pr);
+    /* width:  95%; */
+    max-width: 430px;
+    height: 600px;
+    position: relative;
+    margin-bottom: 46px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    
+}

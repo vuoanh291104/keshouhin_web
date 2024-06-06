@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',(event)=>{
     const offSignIn = () => signIn.style.display = 'none'
 
     btnOK.addEventListener('click',()=>{
-        // Xu ly su kien click button OK
+        alert('Success');
         offSignIn()
     })
     btnCancel.addEventListener('click',()=>{
