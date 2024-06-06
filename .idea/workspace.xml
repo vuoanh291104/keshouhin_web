@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ab5e9ef0-6829-48c4-91f2-c237d5d6c21b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/JS/FS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JS/FS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JS/hot.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JS/hot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/css/hot.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/hot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/data/products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JS/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JS/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JS/hot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/flashSales.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/flashSales.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/signIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/AllProducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/AllProducts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/FlashSales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/FlashSales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/html/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/Home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/html/hot.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/hot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/signIn.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,25 +25,25 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2hUR4j6wOgWrO03P4Lg3XP8UKaj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "OanhChan",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Web/keshouhin_web",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;OanhChan&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Web/keshouhin_web&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -55,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717646479624</updated>
       <workItem from="1717646480693" duration="114000" />
+      <workItem from="1717699918515" duration="4000" />
     </task>
     <servers />
   </component>

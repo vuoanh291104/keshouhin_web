@@ -172,7 +172,7 @@ body {
     display: none;
     flex-direction: row;
     justify-content: space-between;
-    height: 455px;
+    height: 462px;
     position: absolute;
     width: 705px;
     top: 0;
@@ -209,15 +209,17 @@ main {
 
 /* slider */
 
-.slider {
+.slider {  
     margin: 150px 45px 64px;
-
-
 
 }
 
 .slider .img_slider {
     width: 100%;
+    display: none;
+}
+.slider .img_slider:first-child {
+    display: block;
 }
 
 /* main FlashSale + Band */
@@ -387,8 +389,9 @@ main {
     max-height: 240px;
     border-radius: var(--br-sizeM);
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
-
+    cursor: pointer;
 }
+
 
 .B_container_right .item1 {
     background: url('../img/Band/romand.jpg') no-repeat;
@@ -460,6 +463,11 @@ main {
 .SeeMoreBox a {
     text-decoration: none;
     color: var(--color-lightpink);
+}
+.SeeMoreBox:hover {
+    opacity: 0.8;
+    width: 22%;
+    font-size: 30px;
 }
 
 /* Footer */

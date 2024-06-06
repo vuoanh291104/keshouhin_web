@@ -59,6 +59,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
 })
 
+document.addEventListener("DOMContentLoaded", function() {
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var slides = document.querySelectorAll('.img_slider');
+        // Ẩn tất cả các ảnh
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        // Tăng chỉ số slideIndex
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        // Hiển thị ảnh hiện tại
+        slides[slideIndex - 1].style.display = 'block';
+        // Gọi lại hàm sau một khoảng thời gian (ví dụ: sau mỗi 2 giây)
+        setTimeout(showSlides, 2000);
+    }
+});
+
 
 
 $(document).ready(function () {
@@ -100,6 +122,9 @@ $(document).ready(function () {
         signIn.style.display='none';
         loadContent('signIn.html');
         
+    });
+    $('.SeeMoreBox').click(function(event){
+        loadContent('AllProducts.html')
     })
 });
 
