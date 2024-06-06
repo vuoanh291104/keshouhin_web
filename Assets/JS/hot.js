@@ -18,30 +18,32 @@ Promise.all([loadHTML('../html/Product.html'), loadJSON('../data/products.json')
         var productTemplate = tempDiv.querySelector('.productItem');
 
         // Lấy phần tử container
-        var productContainer = document.querySelector('.botRightHot');
+        var productContainer = document.querySelector('.productsContainer');
 
         // Lặp qua mỗi object trong mảng products và tạo ra 15 sản phẩm
         for (let i = 0; i < products.length; i++) {
             // Chọn sản phẩm từ JSON theo chỉ số i
-            let product = products[i % products.length];
+            let product = products[i];
+            if(product.Tag=="hot"){
+                // Sao chép phần tử mẫu
+                var productItem = productTemplate.cloneNode(true);
 
-            // Sao chép phần tử mẫu
-            var productItem = productTemplate.cloneNode(true);
+                // Cập nhật phần tử productImg
+                var productImg = productItem.querySelector('.productImg');
+                productImg.style.backgroundImage = `url(${product.URLimg})`;
 
-            // Cập nhật phần tử productImg
-            var productImg = productItem.querySelector('.productImg');
-            productImg.style.backgroundImage = `url(${product.URLimg})`;
+                // Cập nhật phần tử productCost
+                var productCost = productItem.querySelector('.productCost');
+                productCost.textContent = product.Cost;
 
-            // Cập nhật phần tử productCost
-            var productCost = productItem.querySelector('.productCost');
-            productCost.textContent = product.Cost;
+                // Cập nhật phần tử productName
+                var productName = productItem.querySelector('.productName');
+                productName.textContent = product.Name;
 
-            // Cập nhật phần tử productName
-            var productName = productItem.querySelector('.productName');
-            productName.textContent = product.Name;
-
-            // Thêm productItem vào productContainer
-            productContainer.appendChild(productItem);
+                // Thêm productItem vào productContainer
+                productContainer.appendChild(productItem);
+            }
+            
         }
     })
     .catch(error => console.error('Error loading content:', error));
