@@ -36,7 +36,13 @@ function loadJSON(url) {
                 // Cập nhật phần tử productName
                 var productName = productItem.querySelector('.productName');
                 productName.textContent = product.Name;
+
+                productItem.querySelector('.addToCart').addEventListener('click', function() {
+                    addToCart(product.ID);
+                });
                allProductsContainer.appendChild(productItem);
             });
         })
         .catch(error => console.error('Error loading content:', error));
+
+      

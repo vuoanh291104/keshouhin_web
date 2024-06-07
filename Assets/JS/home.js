@@ -59,26 +59,56 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
 })
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     var slideIndex = 0;
+//     showSlides();
+
+//     function showSlides() {
+//         var slides = document.querySelectorAll('.img_slider');
+//         // Ẩn tất cả các ảnh
+//         for (var i = 0; i < slides.length; i++) {
+//             slides[i].style.display = 'none';
+//         }
+//         // Tăng chỉ số slideIndex
+//         slideIndex++;
+//         if (slideIndex > slides.length) {
+//             slideIndex = 1;
+//         }
+//         // Hiển thị ảnh hiện tại
+//         slides[slideIndex - 1].style.display = 'block';
+//         // Gọi lại hàm sau một khoảng thời gian (ví dụ: sau mỗi 2 giây)
+//         setTimeout(showSlides, 2000);
+//     }
+// });
 document.addEventListener("DOMContentLoaded", function() {
-    var slideIndex = 0;
-    showSlides();
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.img_slider');
+    const totalSlides = slides.length;
+    const slideContainer = document.createElement('div');
+    slideContainer.classList.add('slides');
+
+    // Di chuyển tất cả các slide vào trong slideContainer
+    slides.forEach(slide => slideContainer.appendChild(slide));
+
+    // Thêm slideContainer vào slider
+    const slider = document.querySelector('.slider');
+    slider.appendChild(slideContainer);
 
     function showSlides() {
-        var slides = document.querySelectorAll('.img_slider');
-        // Ẩn tất cả các ảnh
-        for (var i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
-        }
         // Tăng chỉ số slideIndex
         slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
+        if (slideIndex >= totalSlides) {
+            slideIndex = 0;
         }
-        // Hiển thị ảnh hiện tại
-        slides[slideIndex - 1].style.display = 'block';
+        // Dịch chuyển slide
+        slideContainer.style.transform = `translateX(${-slideIndex * 100}%)`;
         // Gọi lại hàm sau một khoảng thời gian (ví dụ: sau mỗi 2 giây)
         setTimeout(showSlides, 2000);
     }
+
+    // Hiển thị slide đầu tiên
+    slideContainer.style.transform = `translateX(0)`;
+    setTimeout(showSlides, 500);
 });
 
 
@@ -125,6 +155,11 @@ $(document).ready(function () {
     });
     $('.SeeMoreBox').click(function(event){
         loadContent('AllProducts.html')
+    });
+
+    $('.icon_cart').click(function(event){
+        
+        loadContent('Cart.html')
     })
 });
 
