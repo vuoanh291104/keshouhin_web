@@ -209,7 +209,7 @@ main {
 
 /* slider */
 
-.slider {  
+/* .slider {  
     margin: 150px 45px 64px;
 
 }
@@ -217,10 +217,31 @@ main {
 .slider .img_slider {
     width: 100%;
     display: none;
+    cursor: pointer;
 }
 .slider .img_slider:first-child {
     display: block;
+} */
+.slider {
+    margin: 150px 45px 64px;
+    overflow: hidden;
+    max-width: 100%;
+    /* max-width: 800px; */
+    position: relative;
+    border: 1px solid #ddd;
 }
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.img_slider {
+    min-width: 100%;
+    cursor: pointer;
+}
+
 
 /* main FlashSale + Band */
 .head_name {
@@ -266,6 +287,7 @@ main {
 .Band_left {
     display: flex;
     margin-left: 46px;
+    
 }
 
 .Band_left_name {
@@ -275,6 +297,7 @@ main {
 /* FLASH SALES */
 .flashSalee {
     margin-bottom: 85px;
+    
 }
 
 .flashsale_container {
@@ -300,6 +323,7 @@ main {
     text-align: center;
     width: 21%;
     height: 500px;
+    cursor: pointer;
 }
 
 .FSProduct_img {
