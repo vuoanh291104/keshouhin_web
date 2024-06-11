@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/Cart.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    
+    <script src="../JS/item.js"></script>
+    <link rel="stylesheet" href="../css/itemGioHang.css">
     <script src="../JS/cart.js"></script>
 </head>
 
@@ -33,6 +34,11 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function(){
+            $('.lsSanPham').load('itemGioHang.html .item');
+        });
+    </script>
 </body>
 
 </html>

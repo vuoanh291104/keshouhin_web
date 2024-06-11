@@ -1,24 +1,95 @@
-body {
-    width: 100vw;
-    height: 100vw;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .item {
+    margin-top: 50px;
+    margin-left: 50px;
     width: 100%;
-    height: max-content;
+    height: 130px;
     display: flex;
     position: relative;
-}
-
-.item input {
-    position: absolute;
-    left: 0px;
+    align-items: center;
 }
 
 .center {
     position: absolute;
-    right: 0px;
-    width: 80%;
-    height: max-content;
-    background-color: aqua;
+    left: 60px;
+    width: 90%;
+    height: 100%;
+    background-color: #84E0FD;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.anh {
+    height: 100%;
+}
+
+.anh img {
+    height: 100%;
+    width: 150%;
+}
+
+.info {
+    height: 100%;
+    width: 70%;
+    font-family: var(--font-be-vietnam);
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.tenSanPham {
+    padding-bottom: 20px;
+}
+
+.groupBtnInp {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupBtnInp button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FFF;
+    background-color: #84E0FD;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.groupBtnInp input {
+    width: 46px;
+    height: 46px;
+    border: 1px solid #FFF;
+    background-color: #84E0FD;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: #FFF;
+    outline: none;
+}
+
+/* Ẩn spinner trong các trình duyệt Webkit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Ẩn spinner trong Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
 }
