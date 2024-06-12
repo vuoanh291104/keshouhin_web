@@ -115,10 +115,12 @@
     flex-direction: row;
     align-items: center;
 }
-.infoKhachHang{
+
+.infoKhachHang {
     min-width: 1300px;
     margin: 50px 0px;
 }
+
 .txtTitle {
     font-family: var(--font-be-vietnam);
     width: 256px;
@@ -141,4 +143,33 @@
     box-shadow: none;
     border-style: solid;
     padding-left: 24px;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+}
+.luaChon{
+    margin-bottom: 30px;
+}
+.select select {
+    height: 64px;
+    width: max-content;
+    min-width: 150px;
+    max-width: 280px;
+    border: 1px solid var(--color-lightcoral);
+    background-color: #FFF;
+    border-radius: var(--br-sizeS);
+    outline: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    color: var(--color-lightcoral);
+    margin-right: 90px;
+}
+
+.select label {
+    font-family: var(--font-be-vietnam);
+    font-size: 32px;
+    color: var(--color-lightcoral);
+    margin-right: 20px;
 }

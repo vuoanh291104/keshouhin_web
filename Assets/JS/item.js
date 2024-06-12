@@ -1,18 +1,25 @@
 $(document).ready(function () {
-    $('.lsSanPham').load('itemGioHang.html .item', function () {
-        // Hàm gọi lại để thực hiện sau khi nội dung được tải
-        // Bạn có thể đặt việc gán sự kiện ở đây
-        var btnTru = document.getElementById('tru');
-        var btnCong = document.getElementById('cong');
-        var va = document.getElementById('value');
-        btnTru.addEventListener('click', function () {
-            changeValue(-1);
+    // Lấy phần cuối của đường dẫn
+    var path = window.location.pathname;
+    var page = path.substring(path.lastIndexOf('/') + 1);
+
+    if (page === 'buy.html') {
+        $('.lsSanPham').load('itemDatHang.html .item', function () { });
+    } else {
+        $('.lsSanPham').load('itemGioHang.html .item', function () {
+            var btnTru = document.getElementById('tru');
+            var btnCong = document.getElementById('cong');
+            var va = document.getElementById('value');
+            btnTru.addEventListener('click', function () {
+                changeValue(-1);
+            });
+            btnCong.addEventListener('click', function () {
+                changeValue(1);
+            });
         });
-        btnCong.addEventListener('click', function () {
-            changeValue(1);
-        });
-    });
+    }
 });
+
 
 
 function changeValue(a) {
