@@ -1,14 +1,12 @@
 .aboutMe {
-  width: 100%;
-  height: max-content;
   display: flex;
-  min-width: 2700px;
+  flex-direction: row;
   margin: 50px 0;
-  align-items: center;
+  
 }
 
 .gioiThieu {
-  width: 63%;
+  max-width: 70%;
   margin-left: 100px;
   height: max-content;
 }
@@ -18,7 +16,7 @@
 }
 
 .gioiThieu p {
-  font-size: 55px;
+  font-size: 50px;
   font-family: var(--font-be-vietnam);
   color: var(--color-lightcoral);
   font-weight: bold;
@@ -29,18 +27,16 @@
   border: none;
   border-radius: var(--br-sizeM);
   display: flex;
-  height: 900px;
+  /* height: 900px; */
   align-items: center;
-  min-width: 1600px;
-  max-width: 1700px;
-  width: max-content;
+
   margin-bottom: 130px;
 }
 
 .anhWeb {
-  width: 552px;
+  width: 700px;
   height: 736px;
-  margin-left: 80px;
+  margin-left: 23px;
 }
 
 .anhWeb img {
@@ -50,13 +46,12 @@
 }
 
 .txtGioiThieu {
-  width: 1000px;
-  margin-left: 50px;
+  width: 70%;
   padding-right: 30px;
 }
 
 .row {
-  width: 100%;
+  
   display: flex;
   margin: 50px 0;
   justify-content: center;
@@ -72,7 +67,7 @@
 }
 
 .text {
-  font-size: 42px;
+  font-size: 32px;
   color: #FFF;
   font-family: var(--font-bree-serif);
   line-height: 45px;
@@ -80,16 +75,21 @@
 }
 
 .vd {
-  width: 30%;
+  width: 25%;
+  height: 100%;
+  margin-top: 150px;
+  margin-left: 23px;
 }
 
 .HyuNieVideo {
-  width: max-content;
+  
   padding: 20px;
   border: 1px solid var(--color-lightpink);
   border-radius: var(--br-sizeM);
 }
 
 .HyuNieVideo video {
+  
+  width: 100%;
   border-radius: var(--br-sizeM);
 }
