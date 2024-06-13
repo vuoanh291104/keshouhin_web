@@ -1,114 +1,90 @@
-.about_page {
+.aboutMe {
   width: 100%;
-  min-width: 1300px;
+  height: max-content;
   display: flex;
-}
-
-.about {
-  max-width: 1440px;
-  margin-left: 46px;
-}
-
-.about-us {
-  font-weight: bold;
-  position: absolute;
-  top: 46px;
-  left: 12px;
-  letter-spacing: 0.1em;
-  display: flex;
+  min-width: 2700px;
+  margin: 50px 0;
   align-items: center;
-  justify-content: center;
-  width: 322px;
-  height: 92px;
 }
 
-.about-child,
-.about-item {
-  position: absolute;
+.gioiThieu {
+  width: 63%;
+  margin-left: 100px;
+  height: max-content;
+}
+
+.txtAbout {
+  margin: 46px 0;
+}
+
+.gioiThieu p {
+  font-size: 55px;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-lightcoral);
+  font-weight: bold;
+}
+
+.bgAbout {
+  background-color: var(--color-pink);
+  border: none;
+  border-radius: var(--br-sizeM);
+  display: flex;
+  height: 900px;
+  align-items: center;
+  min-width: 1600px;
+  max-width: 1700px;
+  width: max-content;
+  margin-bottom: 130px;
+}
+
+.anhWeb {
+  width: 552px;
+  height: 736px;
+  margin-left: 80px;
+}
+
+.anhWeb img {
+  width: 100%;
+  height: 100%;
   border-radius: var(--br-sizeM);
 }
 
-.about-child {
-  bottom: 62px;
-  left: 46px;
-  background-color: #ffc5c1;
-  width: 1348px;
-  height: 828px;
-  min-width: 1300px;
+.txtGioiThieu {
+  width: 1000px;
+  margin-left: 50px;
+  padding-right: 30px;
 }
 
-.about-item {
-  bottom: 108px;
-  left: 92px;
-  width: 552px;
-  height: 736px;
-  object-fit: cover;
-}
-
-.cm-n-qu,
-.hoshi-l-ca {
-  margin-block-start: 0;
-  margin-block-end: 1.6px;
-  letter-spacing: 0.2em;
-}
-
-.cm-n-qu {
-  letter-spacing: 0.15em;
-}
-
-.hoshi-l-ca-container1 {
+.row {
   width: 100%;
-  line-height: 1.6;
-}
-
-.hoshi-l-ca-container {
-
-  position: absolute;
-  bottom: 108px;
-  left: 759px;
-  font-size: 30px;
-  font-family: var(--font-be-vietnam);
-  color: var(--color-white);
-  text-align: left;
   display: flex;
-  align-items: center;
-  width: 575px;
-  height: 736px;
+  margin: 50px 0;
+  justify-content: center;
 }
 
-.material-symbols-lightcircle-icon {
-  margin-bottom: 46px;
+.cc {
+  width: 30px;
+  height: 30px;
+  background-color: #FFF;
+  border-radius: 50%;
+  margin: 20px;
+  min-width: 30px;
 }
 
-.material-symbols-lightcircle-icon,
-.material-symbols-lightcircle-icon1 {
-  position: absolute;
-  bottom: 721px;
-  left: 690px;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
+.text {
+  font-size: 42px;
+  color: #FFF;
+  font-family: var(--font-bree-serif);
+  line-height: 45px;
+  letter-spacing: 1.5px;
 }
 
-.material-symbols-lightcircle-icon1 {
-  bottom: 482px;
-}
-
-.about {
-  width: 100%;
-  position: relative;
-  background-color: var(--color-white);
-  height: 1055px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 46px;
-  color: #ff9689;
-  font-family: var(--font-be-vietnam);
+.vd {
+  width: 30%;
 }
 
 .HyuNieVideo {
-  margin-top: 130px;
-  margin-left: 20px;
+  width: max-content;
   padding: 20px;
   border: 1px solid var(--color-lightpink);
   border-radius: var(--br-sizeM);
