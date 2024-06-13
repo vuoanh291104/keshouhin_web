@@ -28,7 +28,7 @@ function loadProducts() {
             products.forEach(product => {
                 // Sao chép phần tử mẫu
                 var productItem = productTemplate.cloneNode(true);
-
+                productItem.setAttribute('id', product.ID);
                 // Cập nhật phần tử productImg
                 var productImg = productItem.querySelector('.productImg');
                 productImg.style.backgroundImage = `url(${product.URLimg})`;
@@ -41,7 +41,10 @@ function loadProducts() {
                 var productName = productItem.querySelector('.productName');
                 productName.textContent = product.Name;
                 
-                
+                productItem.addEventListener('click', () => {
+                    // Điều hướng đến trang chi tiết sản phẩm với id
+                    window.location.href = `chitiet.html?id=${product.ID}`;
+                });
                 // Kiểm tra và thêm sản phẩm vào container tương ứng
                 if (product.Tag === "hot" && hotProductContainer) {
                     hotProductContainer.appendChild(productItem);
@@ -69,3 +72,5 @@ function checkAndLoadProducts() {
 
 // Bắt đầu quá trình kiểm tra và tải sản phẩm
 checkAndLoadProducts();
+
+
