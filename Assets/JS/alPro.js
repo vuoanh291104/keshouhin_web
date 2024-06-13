@@ -36,7 +36,10 @@ function loadJSON(url) {
                 // Cập nhật phần tử productName
                 var productName = productItem.querySelector('.productName');
                 productName.textContent = product.Name;
-
+                productItem.addEventListener('click', () => {
+                    // Điều hướng đến trang chi tiết sản phẩm với id
+                    window.location.href = `chitiet.html?id=${product.ID}`;
+                });
                 productItem.querySelector('.addToCart').addEventListener('click', function() {
                     addToCart(product.ID);
                 });

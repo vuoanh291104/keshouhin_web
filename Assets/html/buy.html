@@ -7,14 +7,40 @@
     <title>Buy</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/logIn.css">
     <link rel="stylesheet" href="../css/buy.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="../JS/item.js"></script>
     <link rel="stylesheet" href="../css/itemDatHang.css">
+    <script src="../JS/login.js"></script>
+    <script src="../JS/home.js"></script>
     <script src="../JS/buy.js"></script>
 </head>
 
 <body>
+    <div id="signIn" class="main">
+        <div class="oriBg">
+            <div class="boxSignIn">
+                <div class="userName info">
+                    <div class="txtInfo">User name:</div>
+                    <input id="txtUserName" type="text">
+                </div>
+                
+                <div class="pass info">
+                    <div class="txtInfo">Password:</div>
+                    <input id="txtPassword" type="password">
+                </div>
+                <div class="btn">
+                    <button id="btnOK">OK</button>
+                    <button id="btnCancel">Cancel</button>
+                </div>
+                <div class="dangKy">
+                    <p>Bạn chưa có tài khoản? <a class="isClick" href="">Đăng ký</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- this is Header -->
     <header class="header fixed">
         <div class="head_top"></div>
         <div class="main_container">
@@ -29,7 +55,10 @@
                     </div>
                     <div id="body_right_img">
                         <div id="iconID">
-                            <img class="icon_mainHeader icon_cart" src="../img/img_Header/maki_shopicon_cart.svg" alt="cart">
+                            <a href="../html/Cart.html">
+                                <img class="icon_mainHeader icon_cart" src="../img/img_Header/maki_shopicon_cart.svg" alt="cart">
+                            </a>
+                            
                             <img id="modaljs" class="icon_mainHeader1"
                                 src="../img/img_Header/octicon_feed-person-16icon_person.svg" alt="person">
                         </div>
@@ -253,9 +282,9 @@
                     <a href="../html/Home.html">home</a>
 
                 </li>
-                <li><a href="" class="flashSale">flash sales</a></li>
-                <li><a href="" class="hot">hot</a></li>
-                <li><a href="" class="about">about</a></li>
+                <li><a href="../html/FlashSales.html" class="flashSale">flash sales</a></li>
+                <li><a href="../html/hot.html" class="hot">hot</a></li>
+                <li><a href="../html/About.html" class="about">about</a></li>
             </ul>
         </div>
     </section>

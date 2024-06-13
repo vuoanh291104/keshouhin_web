@@ -1,3 +1,6 @@
+.txtAllP {
+    margin-top: 150px;
+}
 .txtAllP a{
     color: var(--color-lightcoral);
     font-size: 46px;
@@ -5,6 +8,7 @@
     font-weight: bold;
     font-family: var(--font-be-vietnam);
     margin-left: 80px;
+    
 }
 
 .allProductsContainer {
