@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi tiet</title>
+
+    <script src="../JS/item.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/chiTiet.css">
 </head>
 <body>
-    
+    <div class="nie">
+        <div class="bgProduct">
+            <div class="anhProduct"><img src="../img/Logo/mdi_cartcart.svg" alt=""></div>
+            <div class="infoProd">
+                <div class="nameProd"><p>Product name</p></div>
+                <div class="cost"><p>Cost</p></div>
+                <div class="soLuong">
+                    <p class="sl">Số lượng</p>
+                    <div class="groupBtnInp">
+                        <button id="tru" onclick="changeValue(-1)">-</button>
+                        <input id="value" type="number" value="0">
+                        <button id="cong" onclick="changeValue(1)">+</button>
+                    </div>
+                </div>
+                <div class="btn">
+                    <div class="btnGioHang">
+                        <button>
+                            <img src="../img/Logo/addToCart.svg" alt="">
+                            <p>Giỏ hàng</p>
+                        </button>
+                    </div>
+                    <div class="btnMuaNgay"><button><p>Mua ngay</p></button></div>
+                </div>
+            </div>
+        </div>
+        <div class="moTa">
+            <p>Mô tả chi tiết</p>
+            <hr color="#FF9689" >
+            <div class="txtMoTa">
+                <p></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

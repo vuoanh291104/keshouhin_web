@@ -1,0 +1,159 @@
+.nie {
+    min-width: 1380px;
+    margin-top: 50px;
+}
+
+.bgProduct {
+    background-color: var(--color-pink);
+    width: 1348px;
+    height: 644px;
+    border-radius: var(--br-sizeM);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 46px;
+    margin-bottom: 92px;
+}
+
+.anhProduct {
+    width: 552px;
+    height: 552px;
+    background-color: #FFF;
+    border-radius: var(--br-sizeM);
+    border: none;
+    margin-right: 92px;
+}
+
+.anhProduct img {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.nameProd {
+    width: 598px;
+    height: 138px;
+    background-color: #FFF;
+    margin-bottom: 22px;
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-family: var(--font-bree-serif);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cost {
+    margin-bottom: 162px;
+}
+
+.sl {
+    color: #FFF;
+    margin-right: 200px;
+}
+
+.soLuong {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin-bottom: 52px;
+    align-items: center;
+}
+
+.groupBtnInp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupBtnInp button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FFF;
+    background-color: var(--color-pink);
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.groupBtnInp input {
+    width: 46px;
+    height: 46px;
+    border: 1px solid #FFF;
+    background-color: var(--color-pink);
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: #FFF;
+    outline: none;
+}
+
+/* Ẩn spinner trong các trình duyệt Webkit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Ẩn spinner trong Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.btn {
+    display: flex;
+}
+
+.btn button {
+    width: 229px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #FFF;
+}
+
+.btnGioHang button img {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+
+.btnGioHang {
+    margin-right: 140px;
+}
+
+.moTa {
+    color: var(--color-pink);
+}
+
+.moTa p {
+    width: 460px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    margin-left: 46px;
+    font-size: 46px;
+}
+
+hr {
+    height: 1px;
+}
+
+.txtMoTa {
+    width: 1334px;
+    min-height: 500px;
+    height: max-content;
+    border: 1px solid #FEAEA7;
+    margin: 42px 46px;
+}
