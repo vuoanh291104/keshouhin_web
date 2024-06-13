@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const province = this.value;
         const districtsSelect = document.getElementById('districtSelect');
 
-        districtsSelect.innerHTML = '<option value="">Chọn Huyện/Thành phố</option>';
+        districtsSelect.innerHTML = '<option value="">Select a district</option>';
 
         if (province) {
             const districts = districtsByProvince[province];
