@@ -6,6 +6,8 @@
     <title>Chi tiet</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="../JS/home.js"></script>
+    <link rel="stylesheet" href="../css/logIn.css">
+    <script src="../JS/login.js"></script>
     <script src="../JS/item.js"></script>
     <script src="../JS/chitiet.js"></script>
     
@@ -14,6 +16,28 @@
     <link rel="stylesheet" href="../css/chiTiet.css">
 </head>
 <body>
+    <div id="signIn" class="main">
+        <div class="oriBg">
+            <div class="boxSignIn">
+                <div class="userName info">
+                    <div class="txtInfo">User name:</div>
+                    <input id="txtUserName" type="text">
+                </div>
+                
+                <div class="pass info">
+                    <div class="txtInfo">Password:</div>
+                    <input id="txtPassword" type="password">
+                </div>
+                <div class="btn">
+                    <button id="btnOK">OK</button>
+                    <button id="btnCancel">Cancel</button>
+                </div>
+                <div class="dangKy">
+                    <p>Bạn chưa có tài khoản? <a class="isClick" href="">Đăng ký</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="header fixed">
         <div class="head_top"></div>
         <div class="main_container">
@@ -28,7 +52,10 @@
                     </div>
                     <div id="body_right_img">
                         <div id="iconID">
-                            <img class="icon_mainHeader icon_cart" src="../img/img_Header/maki_shopicon_cart.svg" alt="cart">
+                            <a href="../html/Cart.html">
+                                <img class="icon_mainHeader icon_cart" src="../img/img_Header/maki_shopicon_cart.svg" alt="cart">
+                            </a>
+                            
                             <img id="modaljs" class="icon_mainHeader1"
                                 src="../img/img_Header/octicon_feed-person-16icon_person.svg" alt="person">
                         </div>
@@ -273,7 +300,7 @@
                         <button id="cong" onclick="changeValue(1)">+</button>
                     </div>
                 </div>
-                <div class="btn">
+                <div class="btnn">
                     <div class="btnGioHang">
                         <button>
                             <img src="../img/Logo/addToCart.svg" alt="">

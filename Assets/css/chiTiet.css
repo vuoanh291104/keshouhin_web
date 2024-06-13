@@ -117,11 +117,11 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-.btn {
+.btnn {
     display: flex;
 }
 
-.btn button {
+.btnn button {
     width: 229px;
     height: 92px;
     display: flex;

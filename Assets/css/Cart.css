@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     min-width: 1500px;
+    margin: 150px 0;
 }
 
 .Cart {
