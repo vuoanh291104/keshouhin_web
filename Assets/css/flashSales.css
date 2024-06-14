@@ -1,25 +1,29 @@
 .Time {}
+
 .TimeHeader {
     display: flex;
     align-items: center;
     padding: 30px 100px;
 }
+
 .TimeHeader .name {
     color: var(--color-lightcoral);
     font-family: var(--font-be-vietnam);
     font-size: 50px;
     font-weight: bold;
-   
+
     text-transform: uppercase;
 
 }
+
 .countDown {
-   
+
     height: 46px;
     width: 30%;
     display: flex;
     margin-left: 23px;
 }
+
 .countDownHours,
 .countDownMin,
 .countDownSe {
@@ -32,6 +36,7 @@
     line-height: 54px;
     font-weight: bold;
 }
+
 .twoDot {
     height: 54px;
     font-size: 32px;
@@ -49,26 +54,30 @@
     text-align: center;
     margin-top: 32px;
 }
+
 .timeNow {
     width: 50%;
     height: 118px;
     border-radius: 10px 0px 0px 10px;
-    border: 2px solid var(--color-lightcoral) ;
+    border: 2px solid var(--color-lightcoral);
     background: rgba(255, 197, 193, 0.00);
 }
+
 .timeNext {
     width: 50%;
     height: 118px;
     border-radius: 0px 10px 10px 0px;
     background: var(--color-pink);
 }
+
 .timeNow_set,
 .timeNow_p {
     color: rgba(0, 0, 0, 0.58);
-    font-family: var(--font-be-vietnam); 
+    font-family: var(--font-be-vietnam);
     font-weight: bold;
     letter-spacing: 5px;
 }
+
 .timeNext_set,
 .timeNext_p {
     color: var(--color-white);
@@ -76,11 +85,13 @@
     font-weight: bold;
     letter-spacing: 5px;
 }
+
 .timeNow_set,
 .timeNext_set {
     font-size: 50px;
     margin-bottom: 25px;
 }
+
 .timeNow_p,
 .timeNext_p {
     text-transform: uppercase;
@@ -89,15 +100,16 @@
 
 .productsContainer {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* width: 100%; */
     /* column-gap: 5%; */
-    
+
     margin: 64px 0 46px 3.5%;
-    
+
 
 }
-.productItem{
+
+.productItem {
     background-color: var(--color-light-pr);
     /* width:  95%; */
     max-width: 430px;
@@ -111,31 +123,36 @@
 section {
     width: 100%;
 }
+
 .change {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 46px;
 }
- .changeNum {
+
+.changeNum {
     border: 2px solid var(--color-lightcoral);
     width: 46px;
     height: 46px;
     margin: 0 16px;
 }
+
 .changeNum_text {
     line-height: 46px;
     font-size: 24px;
     text-align: center;
     font-weight: 600;
 }
+
 .to_next {
     background: url('../img/img_Header/nextPage/mingcute_right-lineright.svg') no-repeat;
     background-size: contain;
     height: 46px;
     width: 46px;
-    
+
 }
+
 .to_pre {
     background: url('../img/img_Header/nextPage/mingcute_right-line.svg');
     background-size: contain;
