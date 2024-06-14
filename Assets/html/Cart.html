@@ -11,6 +11,7 @@
     <script src="../JS/item.js"></script>
     <link rel="stylesheet" href="../css/itemGioHang.css">
     <script src="../JS/cart.js"></script>
+    <script src="../JS/thongBao.js"></script>
 </head>
 
 <body>
@@ -21,13 +22,57 @@
                 <p>Sản phẩm</p>
             </div>
             <div class="lsSanPham">
-
+                <div class="item">
+                    <input type="checkbox" style="width: 35px; height: 35px;" checked>
+                    <div class="center">
+                        <div class="anh"><img src="../img/Product/ProductFS/ganier3.png" alt="" class="anhSanPham"></div>
+                        <div class="infoGioHang">
+                            <p class="tenSanPham">Vitamin C Whip - Chính hãng, Giúp làn da đẹp như người yêu bạn!</p>
+                            <p class="giaSanPham">280.000 đ</p>
+                        </div>
+                        <div class="groupBtnInp">
+                            <button id="tru" onclick="changeValue(-1)">-</button>
+                            <input id="value" type="number" value="1">
+                            <button id="cong" onclick="changeValue(1)">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <input type="checkbox" style="width: 35px; height: 35px;" checked>
+                    <div class="center">
+                        <div class="anh"><img src="../img/Product/ProductFS/dove1.png" alt="" class="anhSanPham"></div>
+                        <div class="infoGioHang">
+                            <p class="tenSanPham">Sữa tắm Dove - Tẩy sạch vết bẩn dính trên làn da của bạn</p>
+                            <p class="giaSanPham">150.000 đ</p>
+                        </div>
+                        <div class="groupBtnInp">
+                            <button id="tru" onclick="changeValue(-1)">-</button>
+                            <input id="value" type="number" value="3">
+                            <button id="cong" onclick="changeValue(1)">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <input type="checkbox" style="width: 35px; height: 35px;">
+                    <div class="center">
+                        <div class="anh"><img src="../img/Product/ProductFS/dove2.png" alt="" class="anhSanPham"></div>
+                        <div class="infoGioHang">
+                            <p class="tenSanPham">Lọ tẩy tế bào chết Dove - Tẩy sạch tế bào không còn sống trên làn da của bạn</p>
+                            <p class="giaSanPham">120.000 đ</p>
+                        </div>
+                        <div class="groupBtnInp">
+                            <button id="tru" onclick="changeValue(-1)">-</button>
+                            <input id="value" type="number" value="1">
+                            <button id="cong" onclick="changeValue(1)">+</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="tongTien">
                 <p class="labelTongTien">
                     Tổng tiền:
                 </p>
-                <p class="intTien">0 đ</p>
+                <p class="intTien">730.000 đ</p>
             </div>
             <div class="btnThanhToan">
                 <a href="buy.html"><button>Thanh toán</button></a>
@@ -35,11 +80,6 @@
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function(){
-            $('.lsSanPham').load('itemGioHang.html .item');
-        });
-    </script>
 </body>
 
 </html>

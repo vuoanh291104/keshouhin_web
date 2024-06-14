@@ -46,6 +46,10 @@ p {
     font-weight: bold;
 }
 
+.nameProd>p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .cost {
     margin-bottom: 162px;
 }

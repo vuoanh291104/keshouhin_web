@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/buy.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="../JS/item.js"></script>
     <link rel="stylesheet" href="../css/itemDatHang.css">
     <script src="../JS/buy.js"></script>
+    <script src="../JS/thongBao.js"></script>
 </head>
 
 <body>
@@ -19,7 +19,32 @@
             <div class="hienSanPham">
                 <div class="txtSanPham"><p>Sản phẩm</p></div>
                 <div class="lsSanPham">
-                
+                    <div class="item">
+                        <div class="stt"><p>1</p></div>
+                        <div class="center">
+                            <div class="anh"><img src="../img/Product/ProductFS/ganier3.png" alt="" class="anhSanPham"></div>
+                            <div class="info">
+                                <p class="tenSanPham">Vitamin C Whip - Chính hãng, Giúp làn da đẹp như người yêu bạn!</p>
+                                <p class="giaSanPham">280.000 đ</p>
+                            </div>
+                            <div class="groupBtnInp">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="stt"><p>2</p></div>
+                        <div class="center">
+                            <div class="anh"><img src="../img/Product/ProductFS/dove1.png" alt="" class="anhSanPham"></div>
+                            <div class="info">
+                                <p class="tenSanPham">Sữa tắm Dove - Tẩy sạch vết bẩn dính trên làn da của bạn </p>
+                                <p class="giaSanPham">150.000 đ</p>
+                            </div>
+                            <div class="groupBtnInp">
+                                <p>3</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="infoKhachHang">
@@ -38,9 +63,8 @@
                     </div>
                 </div>
                 <div class="rowInfor">
-                    <div class="txtTitle"></div>
                     <div class="luaChon">
-                        <label for="tinh">Provinces</label>
+                        <label for="tinh" class="txtTitle">Provinces</label>
                         <select id="vietnam-provinces" name="vietnam-provinces">
                             <option value="other">Select a provinces</option>
                             <option value="An Giang">An Giang</option>
@@ -107,7 +131,7 @@
                             <option value="Vĩnh Phúc">Vĩnh Phúc</option>
                             <option value="Yên Bái">Yên Bái</option>
                         </select>
-                        <label for="tinh">District</label>
+                        <label for="tinh" class="txtTitle">District</label>
                         <select id="districtSelect" disabled>
                             <option value="">Select a district</option>
                         </select>
@@ -118,10 +142,10 @@
                 <p class="labelTongTien">
                     Tổng tiền:
                 </p>
-                <p class="intTien">0 đ</p>
+                <p class="intTien">730.000 đ</p>
             </div>
             <div class="btnThanhToan">
-                <button>Đặt hàng</button>
+                <button onclick="thongBao('Đơn hàng của bạn sẽ được vận chuyển sớm nhất có thể. Dự định nhận hàng vào 30/02/2024')">Đặt hàng</button>
             </div>
         </div>
     </div>

@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 //         setTimeout(showSlides, 2000);
 //     }
 // });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let slideIndex = 0;
     const slides = document.querySelectorAll('.img_slider');
     const totalSlides = slides.length;
@@ -146,19 +146,19 @@ $(document).ready(function () {
         event.preventDefault();
         loadContent('hot.html');
     });
-    
-    $('.isClick').click(function(event){
+
+    $('.isClick').click(function (event) {
         event.preventDefault();
-        signIn.style.display='none';
+        signIn.style.display = 'none';
         loadContent('signIn.html');
-        
+
     });
-    $('.SeeMoreBox').click(function(event){
+    $('.SeeMoreBox').click(function (event) {
         loadContent('AllProducts.html')
     });
 
-    $('.icon_cart').click(function(event){
-        
+    $('.icon_cart').click(function (event) {
+
         loadContent('Cart.html')
     })
 });

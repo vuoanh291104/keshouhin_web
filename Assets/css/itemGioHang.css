@@ -18,10 +18,11 @@
     left: 60px;
     width: 90%;
     height: 100%;
-    background-color: #84E0FD;
+    background-color: var(--color-pink);
     display: flex;
     align-items: center;
     border-radius: 10px;
+    padding: 8px;
 }
 
 .anh {
@@ -59,7 +60,7 @@
     width: 32px;
     height: 32px;
     border: 1px solid #FFF;
-    background-color: #84E0FD;
+    background-color: var(--color-pink);
     font-weight: bold;
     font-size: 32px;
     margin: 0px 8px;
@@ -74,7 +75,7 @@
     width: 46px;
     height: 46px;
     border: 1px solid #FFF;
-    background-color: #84E0FD;
+    background-color: var(--color-pink);
     text-align: center;
     font-weight: bold;
     font-size: x-large;
