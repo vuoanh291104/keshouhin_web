@@ -164,4 +164,73 @@ document.addEventListener("DOMContentLoaded", function () {
     
 // });
 
+document.addEventListener("DOMContentLoaded", function() {
+    let containerFS = document.querySelector('.FSadd .flashsale_container');
+    let productFSes = document.querySelectorAll('.FSadd .flashsale_container .FSProduct');
+    let btn_Left = document.querySelector('.icon_left');
+    let btnRight = document.querySelector('.icon_right');
 
+    let active = 0;
+    let lengProducts = productFSes.length - 1;
+
+    btnRight.onclick = function() {
+        if (active + 4 > lengProducts) {
+            active = 0;
+        } else {
+            active += 4;
+        }
+        reloadProduct();
+        
+
+    }
+    let refresProduct = setInterval(()=> {btnRight.click()},5000);
+
+    btn_Left.onclick = function() {
+        if (active - 4 < 0) {
+            active = lengProducts - (4 - (active + 1));  
+        } else {
+            active -= 4;
+        }
+        reloadProduct();
+    }
+
+    function reloadProduct() {
+        let checkleft = productFSes[active].offsetLeft;
+        containerFS.style.left = (-checkleft +32) + 'px';
+        clearInterval(refresProduct);
+        refresProduct = setInterval(()=> {btnRight.click()},5000);
+    }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('../data/products.json')
+        .then(response => response.json())
+        .then(products => {
+            const flashsaleContainer = document.querySelector('.flashsale_container');
+            const PFSes = document.querySelectorAll('.FSProduct');
+            
+            for(var i=0 ;i <12; i++){
+                const product = products[i];
+
+                // Lấy các phần tử con trong `.FSProduct`
+                const FSProduct = PFSes[i];
+                const img = FSProduct.querySelector('.FSProduct_img');
+                const cost = FSProduct.querySelector('.FSProduct_cost');
+                const name = FSProduct.querySelector('.FSProduct_name');
+
+                // Đặt nội dung từ `products.json` vào các phần tử tương ứng
+                img.src = product.URLimg;
+                img.alt = product.Band;
+                cost.textContent = `${product.CostSale}.000đ`; // Giả sử `Cost` lưu giá bán
+                name.textContent = product.Name;
+
+                FSProduct.addEventListener('click', () => {
+                    // Điều hướng đến trang chi tiết sản phẩm với id
+                    window.location.href = `chitiet.html?id=${product.ID}`;
+                });
+            }
+        })
+        .catch(error => console.error('Error fetching the products:', error));
+});

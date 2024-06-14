@@ -80,7 +80,10 @@ p {
 .nameProd>p {
     font-family: 'Times New Roman', Times, serif;
 }
-
+.CostGeneral {
+    display: flex;
+    
+}
 .cost {
     margin-bottom: 23px;
     opacity: 0.7;
@@ -89,6 +92,14 @@ p {
 .cost p {
     font-size: 40px;
 }
+.costmono {
+    padding-top: 8px;
+    font-size: 30px;
+    opacity: 0.7;
+    text-decoration: line-through;
+    margin-right: 32px;
+}
+
 .ticket {
     display: flex;
     align-items: center;
@@ -96,6 +107,9 @@ p {
 }
 .ticket p {
     opacity: 0.7;
+}
+.iconticket {
+    cursor: pointer;
 }
 
 .sl {
@@ -170,12 +184,18 @@ input[type="number"] {
     outline: none;
     background-color: #FFF;
     border-radius: var(--br-sizeS);
+    cursor: pointer;
 }
 
 .btnGioHang button img {
     width: 60px;
     height: 60px;
     margin-right: 12px;
+}
+.btnMuaNgay:hover,
+.btnGioHang:hover {
+    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btnGioHang {
@@ -192,7 +212,7 @@ input[type="number"] {
     margin-left: 150px;
     border-radius: 50%;
     text-align: center;
-    
+    cursor: pointer;
     line-height: 50px;
 }
 .bandProducttImg img {
@@ -208,6 +228,9 @@ input[type="number"] {
     font-size: 32px;
     font-weight: bold;
     opacity: 0.7;
+}
+.chatToband {
+    cursor: pointer;
 }
 .moTa {
     /* color: var(--color-pink); */
