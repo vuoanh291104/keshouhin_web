@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .productCost,
 .productName {
     /* color: var(--color-white); */
