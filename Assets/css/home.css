@@ -247,6 +247,7 @@ main {
 .head_name {
     display: flex;
     padding-top: 16px;
+    margin-bottom: 23px;
 }
 
 .contect {
@@ -297,56 +298,77 @@ main {
 /* FLASH SALES */
 .flashSalee {
     margin-bottom: 85px;
-    
+    position: relative;
+    overflow: hidden;
+}
+.FSadd {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
 }
 
 .flashsale_container {
-    width: 100%;
+    position: absolute;
+    
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+    /* width: 100%;
     display: flex;
     flex-direction: row;
     margin: 28px 0;
     position: relative;
     justify-content: space-between;
-    max-height: 424px;
+    max-height: 424px; */
 }
 
-.flashsale_container .FSProduct:nth-child(4) {
-    margin-right: 64px;
-}
+
 
 .flashsale_container .FSProduct:first-child {
-    margin-left: 64px;
+    /* margin-left: 23px; */
 }
 
 .FSProduct {
     background-color: var(--color-white);
     text-align: center;
-    width: 21%;
+    width: 405px;
     height: 500px;
     cursor: pointer;
+    margin-right: 38px;
+    border-radius: var(--br-sizeM);
 }
 
 .FSProduct_img {
-    width: 80%;
+    border-radius: var(--br-sizeM);
+    border: 1px var(--color-pink) solid;
     max-height: 320px;
     margin-top: 24px;
-
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .FSProduct_name,
 .FSProduct_cost {
-    height: 30px;
+    height: 20px;
     text-align: left;
     margin: 16px 26px;
     font-family: var(--font-be-vietnam);
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 1.6px;
+
+    overflow: hidden; /* Ẩn phần văn bản tràn ra ngoài */
+    display: -webkit-box; /* Sử dụng Flexbox để bố trí văn bản */
+    -webkit-box-orient: vertical; /* Đặt hướng cho Flexbox */
+    -webkit-line-clamp: 1; /* Giới hạn số dòng hiển thị */
+    white-space: normal; /* Cho phép xuống dòng */
 }
 
 .FSProduct_cost {
     height: 40px;
     font-size: 23px;
+    font-weight: bold;
 }
 
 .percent {
@@ -355,19 +377,43 @@ main {
     width: 80%;
     margin: 26px;
 }
+.btnFS {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top:300px
+}
 
 .icon_left {
+   text-align: center;
+    width:64px;
+    height: 64px;
+    border: 2px #ddd solid;
+    border-radius: 50%;
     position: absolute;
-    top: 212px;
-    width: 10%;
-
+    z-index: 1;
+    left: 0;
 }
-
 .icon_right {
+    width:64px;
+    height: 64px;
+    border: 2px #ddd solid;
+    border-radius: 50%;
     position: absolute;
-    top: 212px;
     right: 0px;
+ }
+.icon_left :active,
+.icon_right:active {
+    
+    
+    width:64px;
+    height: 64px;
+    border: 1px var(--color-white) solid;
+    background-color: var(--color-pink);
+    border-radius: 50%;
 }
+
+
 
 .Band_container {
     display: inline-block;
@@ -416,7 +462,11 @@ main {
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+.B_container_right .item:hover {
+    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 
+}
 
 .B_container_right .item1 {
     background: url('../img/Band/romand.jpg') no-repeat;

@@ -31,9 +31,9 @@ function loadJSON(url) {
 
                 // Cập nhật phần tử productCost
                 var productCost = productItem.querySelector('.productCost');
-                productCost.textContent = product.CostSale +'.000';
+                productCost.textContent = product.CostSale +'.000đ';
                 var productCostmono = productItem.querySelector('.productCostMono');
-                productCostmono.textContent=product.Cost + '.000';
+                productCostmono.textContent=product.Cost + '.000đ';
                 // Cập nhật phần tử productName
                 var productName = productItem.querySelector('.productName');
                 productName.textContent = product.Name;

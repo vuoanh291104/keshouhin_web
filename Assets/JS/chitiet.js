@@ -35,8 +35,10 @@ function loadProductDetails() {
 
             // Cập nhật giá sản phẩm
             const productCost = document.querySelector('.cost p');
-            productCost.textContent = product.CostSale +'.000';
+            productCost.textContent = product.CostSale +'.000đ';
 
+            const productCostMono =document.querySelector('.costmono');
+            productCostMono.textContent =product.Cost+'.000đ';
             const productBandImg =document.querySelector('.anhband');
             productBandImg.src=product.BandImg;
 
