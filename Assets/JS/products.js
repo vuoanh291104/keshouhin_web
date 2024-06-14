@@ -35,12 +35,14 @@ function loadProducts() {
 
                 // Cập nhật phần tử productCost
                 var productCost = productItem.querySelector('.productCost');
-                productCost.textContent = product.Cost;
+                productCost.textContent = product.CostSale + '.000';
 
                 // Cập nhật phần tử productName
                 var productName = productItem.querySelector('.productName');
                 productName.textContent = product.Name;
                 
+                var productCostmono = productItem.querySelector('.productCostMono');
+                productCostmono.textContent=product.Cost + '.000';
                 productItem.addEventListener('click', () => {
                     // Điều hướng đến trang chi tiết sản phẩm với id
                     window.location.href = `chitiet.html?id=${product.ID}`;
@@ -49,6 +51,24 @@ function loadProducts() {
                 if (product.Tag === "hot" && hotProductContainer) {
                     hotProductContainer.appendChild(productItem);
                 } else if (product.Tag === "fs" && productContainer) {
+                    var saleFS = document.createElement("div");
+
+                    // Thêm nội dung vào <div> (tùy chọn)
+                    saleFS.innerHTML = Math.round( ((product.Cost - product.CostSale)/product.Cost)*100) +'%';
+
+                    // Gán các thuộc tính CSS cho <div>
+                    saleFS.style.position = "absolute";
+                    saleFS.style.backgroundColor = "var(--color-lightpink)";
+                    saleFS.style.width = "50px";
+                    saleFS.style.height = "50px";
+                    saleFS.style.borderRadius = "50%";
+                    saleFS.style.textAlign = "center";
+                    saleFS.style.right = "16px";
+                    saleFS.style.top = "16px";
+                    saleFS.style.lineHeight = "50px";
+                    saleFS.style.fontSize = "20px";
+                    saleFS.style.fontWeight ="bold";
+                    productItem.appendChild(saleFS);
                     productContainer.appendChild(productItem);
                 }
                 

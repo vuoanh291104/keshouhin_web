@@ -35,8 +35,13 @@ function loadProductDetails() {
 
             // Cập nhật giá sản phẩm
             const productCost = document.querySelector('.cost p');
-            productCost.textContent = product.Cost;
+            productCost.textContent = product.CostSale +'.000';
 
+            const productBandImg =document.querySelector('.anhband');
+            productBandImg.src=product.BandImg;
+
+            const bandName = document.querySelector('.bandProducttName');
+            bandName.textContent = product.Band;
             const productMota = document.querySelector('.txtMoTa p');
             productMota.textContent = product.About;
             productMota.innerHTML = product.About.replace(/\n/g, '<br>');

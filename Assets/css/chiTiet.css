@@ -181,7 +181,34 @@ input[type="number"] {
 .btnGioHang {
     margin-right: 75px;
 }
-
+.bandProductt {
+    display: flex;
+    margin-bottom: 46px;
+}
+.bandProducttImg {
+    border: 2px var(--color-pink) dotted;
+    width: 150px;
+    height: 150px;
+    margin-left: 150px;
+    border-radius: 50%;
+    text-align: center;
+    
+    line-height: 50px;
+}
+.bandProducttImg img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.bandrightdiv {
+    margin-left: 23px;
+    margin-top: 16px;
+}
+.bandProducttName {
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0.7;
+}
 .moTa {
     /* color: var(--color-pink); */
     /* margin-left: 15%; */
@@ -203,7 +230,7 @@ hr {
 }
 
 .txtMoTa {
-    width: 1334px;
+    width: 80%;
     min-height: 500px;
     height: max-content;
     border: 2px solid #FEAEA7;
