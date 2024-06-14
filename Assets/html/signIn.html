@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="../JS/login.js"></script>
     <script src="../JS/home.js"></script>
+    <script src="../JS/thongBao.js"></script>
 </head>
 <body>
     <div id="signIn" class="main">
@@ -30,7 +31,7 @@
                     <button id="btnCancel">Cancel</button>
                 </div>
                 <div class="dangKy">
-                    <p>Bạn chưa có tài khoản? <a class="isClick" href="">Đăng ký</a></p>
+                    <p>Bạn chưa có tài khoản? <a class="isClick" href="signIn.html">Đăng ký</a></p>
                 </div>
             </div>
         </div>
@@ -315,7 +316,7 @@
             <div style="font-size: 26px; width: 700px; height: 64px; color: #CCCCCC; padding: 18px 24px 10px;">Tôi đã đọc và đồng ý <a href="https://www.fujitsu.com/vn/vi/about/businesspolicy/saleoffer/" class="dkien_csach">Điều kiện giao dịch</a> và <a href="https://doopage.com/vi/chinh-sach-bao-mat/" class="dkien_csach">Chính sách bảo mật</a> thông tin của Hoshi </div>
         </div>
         <div class="DangKy">
-            <button class="btnDangKy">Sign In</button>
+            <button class="btnDangKy" onclick="thongBao('Đăng ký thành công!'); openHome()">Sign In</button>
         </div>
     </div>
     <footer id="footer">
