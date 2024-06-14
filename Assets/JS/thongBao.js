@@ -4,3 +4,6 @@ function thongBao(text) {
 function openHome() {
     window.location.href = 'Home.html';
 }
+function openMuaHang() {
+    window.location.href = 'buy.html';
+}
