@@ -43,7 +43,9 @@ function loadProducts() {
                 
                 var productCostmono = productItem.querySelector('.productCostMono');
                 productCostmono.textContent=product.Cost + '.000đ';
-                productItem.addEventListener('click', () => {
+
+                var productItemB = productItem.querySelector('.productItemBox');
+                productItemB.addEventListener('click', () => {
                     // Điều hướng đến trang chi tiết sản phẩm với id
                     window.location.href = `chitiet.html?id=${product.ID}`;
                 });
