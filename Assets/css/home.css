@@ -339,13 +339,14 @@ main {
     text-align: left;
     margin: 16px 26px;
     font-family: var(--font-be-vietnam);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 1.6px;
 }
 
 .FSProduct_cost {
     height: 40px;
+    font-size: 23px;
 }
 
 .percent {
@@ -482,6 +483,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 23px;
+    cursor: pointer;
 }
 
 .SeeMoreBox a {

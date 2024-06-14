@@ -113,54 +113,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-$(document).ready(function () {
-    function loadContent(url) {
-        var mainElement = $('.home_page');
-        mainElement.empty(); // Xóa nội dung hiện tại của phần <main>
+// $(document).ready(function () {
+//     function loadContent(url) {
+//         var mainElement = $('.home_page');
+//         mainElement.empty(); // Xóa nội dung hiện tại của phần <main>
 
-        $.ajax({
-            url: url,
-            dataType: 'html',
-            success: function (data) {
-                mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
+//         $.ajax({
+//             url: url,
+//             dataType: 'html',
+//             success: function (data) {
+//                 mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
 
-            },
-            error: function (xhr, status, error) {
-                console.error('Error loading content:', error);
-            }
-        });
-    }
+//             },
+//             error: function (xhr, status, error) {
+//                 console.error('Error loading content:', error);
+//             }
+//         });
+//     }
 
-    $('.about').click(function (event) {
-        event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-        loadContent('About.html');
-    });
+//     $('.about').click(function (event) {
+//         event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+//         loadContent('About.html');
+//     });
 
-    $('.flashSale').click(function (event) {
-        event.preventDefault();
-        loadContent('FlashSales.html');
+//     $('.flashSale').click(function (event) {
+//         event.preventDefault();
+//         loadContent('FlashSales.html');
 
-    });
+//     });
 
-    $('.hot').click(function (event) {
-        event.preventDefault();
-        loadContent('hot.html');
-    });
+//     $('.hot').click(function (event) {
+//         event.preventDefault();
+//         loadContent('hot.html');
+//     });
+    
+//     $('.isClick').click(function(event){
+//         event.preventDefault();
+//         signIn.style.display='none';
+//         loadContent('signIn.html');
+        
+//     });
+//     $('.SeeMoreBox').click(function(event){
+//         loadContent('AllProducts.html')
+//     });
 
-    $('.isClick').click(function (event) {
-        event.preventDefault();
-        signIn.style.display = 'none';
-        loadContent('signIn.html');
-
-    });
-    $('.SeeMoreBox').click(function (event) {
-        loadContent('AllProducts.html')
-    });
-
-    $('.icon_cart').click(function (event) {
-
-        loadContent('Cart.html')
-    })
-});
+//     $('.icon_cart').click(function(event){
+        
+//         loadContent('Cart.html')
+//     })
+    
+// });
 
 

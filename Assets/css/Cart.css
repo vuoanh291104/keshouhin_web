@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     min-width: 1500px;
+    margin: 150px 0;
 }
 
 .Cart {
@@ -74,6 +75,7 @@
 }
 
 .btnThanhToan {
+    
     width: 100%;
     height: max-content;
     display: flex;
@@ -83,6 +85,7 @@
 }
 
 .btnThanhToan button {
+    cursor: pointer;
     width: 256px;
     height: 64px;
     font-size: 24px;
@@ -90,4 +93,8 @@
     background-color: var(--color-pink);
     color: #FFF;
     border-radius: var(--br-sizeS);
+}
+.btnThanhToan button:hover {
+    background-color: var(--color-light-pr);
+    opacity: 0.7;
 }
