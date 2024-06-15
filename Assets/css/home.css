@@ -364,11 +364,23 @@ main {
     -webkit-line-clamp: 1; /* Giới hạn số dòng hiển thị */
     white-space: normal; /* Cho phép xuống dòng */
 }
+.costBoxx {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
 
 .FSProduct_cost {
     height: 40px;
     font-size: 23px;
     font-weight: bold;
+}
+.FSProduct_costMono {
+    position: absolute;
+    right: 32px;
+    top: 16px;
+    font-size: 22px;
+    text-decoration: line-through;
 }
 
 .percent {

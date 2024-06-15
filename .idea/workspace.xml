@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab5e9ef0-6829-48c4-91f2-c237d5d6c21b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JS/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JS/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JS/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JS/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/About.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/AllProducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/AllProducts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/Cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/Cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/FlashSales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/FlashSales.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/buy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/buy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/chiTiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/chiTiet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/hot.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/hot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/html/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/html/signIn.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,17 +33,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;OanhChan&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Web/keshouhin_web&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "OanhChan",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Web/HTML INTEL/Band",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -59,6 +67,7 @@
       <workItem from="1717997580098" duration="2000" />
       <workItem from="1718115585833" duration="13000" />
       <workItem from="1718119507658" duration="7000" />
+      <workItem from="1718420059972" duration="65000" />
     </task>
     <servers />
   </component>

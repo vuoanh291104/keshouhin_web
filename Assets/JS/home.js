@@ -219,13 +219,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const img = FSProduct.querySelector('.FSProduct_img');
                 const cost = FSProduct.querySelector('.FSProduct_cost');
                 const name = FSProduct.querySelector('.FSProduct_name');
-
+                const monoCost = FSProduct.querySelector('.FSProduct_costMono');
                 // Đặt nội dung từ `products.json` vào các phần tử tương ứng
                 img.src = product.URLimg;
                 img.alt = product.Band;
                 cost.textContent = `${product.CostSale}.000đ`; // Giả sử `Cost` lưu giá bán
                 name.textContent = product.Name;
-
+                monoCost.textContent= `${product.Cost}.000đ`
                 FSProduct.addEventListener('click', () => {
                     // Điều hướng đến trang chi tiết sản phẩm với id
                     window.location.href = `chitiet.html?id=${product.ID}`;
