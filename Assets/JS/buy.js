@@ -86,3 +86,38 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+function checkDonHang() {
+    let ketQuaCheck = true;
+    const myInps = document.querySelectorAll('.myInp');
+    for (let inp of myInps) {
+        switch (inp.type) {
+            case "text":
+                ketQuaCheck &&= inp.value !== '';
+                if (!ketQuaCheck) {
+                    alert('Tên người dùng hoặc địa chỉ không hợp lệ!');
+                    return;
+                }
+                break;
+            case "tel":
+                const chinhQuySDT = /^[0-9]{10}$/;
+                ketQuaCheck &&= chinhQuySDT.test(inp.value);
+                if (!ketQuaCheck) {
+                    alert('Số điện thoại không hợp lệ.');
+                    return;
+                }
+                break;
+
+            default:
+                ketQuaCheck &&= inp.value !== '';
+                if (!ketQuaCheck) {
+                    alert('Vui lòng kiểm tra lại ' + inp.type);
+                    return;
+                }
+                break;
+        }
+    }
+    if (ketQuaCheck) {
+        alert("Thông báo: Đặt hàng thành công. Bạn sẽ nhận hàng dự kiến vào 30/02/2025");
+        window.location.href = 'Cart.html';
+    }
+}

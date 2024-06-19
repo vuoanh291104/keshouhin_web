@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/signIn.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="../JS/login.js"></script>
+    <script src="../JS/signIn.js"></script>
     <script src="../JS/home.js"></script>
     <script src="../JS/thongBao.js"></script>
 </head>
@@ -232,11 +233,9 @@
                                             <li><a href="">Emmié</a></li>
                                             <li><a href="">Bibury</a></li>
                                         </ul>
-
                                         <p><a href="">CHĂM SÓC RĂNG MIỆNG</a></p>
                                         <ul>
                                         </ul>
-
                                     </div>
                                 </div>
                             </li>
@@ -261,13 +260,9 @@
                                             <li><a href="">Vitamin & Khoáng chất</a></li>
                                             <li><a href="">Hỗ trợ sức khỏe</a></li>
                                             <li><a href="">Hỗ trợ làm đẹp</a></li>
-
                                         </ul>
-
-
                                         <ul>
                                         </ul>
-
                                     </div>
                                 </div>
                             </li>
@@ -292,11 +287,11 @@
         </div>
         <div class="rowInfor">
             <div class="txtTitle">Email</div>
-            <div class="select"><input type="text" class="myInp" required></div>
+            <div class="select"><input type="email" class="myInp" required></div>
         </div>
         <div class="rowInfor">
             <div class="txtTitle">Phone</div>
-            <div class="select"><input type="text" class="myInp" required></div>
+            <div class="select"><input type="tel" class="myInp" required></div>
         </div>
         <div class="rowInfor">
             <div class="txtTitle">Sex</div>
@@ -312,11 +307,11 @@
             <div class="select"><input type="password" class="myInp" required></div>
         </div>
         <div class="rowInfor checkDieuKhoan">
-            <input type="checkbox" style="width: 54px; height: 54px;" required>
+            <input id="check" type="checkbox" style="width: 54px; height: 54px;" required>
             <div style="font-size: 26px; width: 700px; height: 64px; color: #CCCCCC; padding: 18px 24px 10px;">Tôi đã đọc và đồng ý <a href="https://www.fujitsu.com/vn/vi/about/businesspolicy/saleoffer/" class="dkien_csach">Điều kiện giao dịch</a> và <a href="https://doopage.com/vi/chinh-sach-bao-mat/" class="dkien_csach">Chính sách bảo mật</a> thông tin của Hoshi </div>
         </div>
         <div class="DangKy">
-            <button class="btnDangKy" onclick="thongBao('Đăng ký thành công!'); openHome()">Sign In</button>
+            <button class="btnDangKy" onclick="checkSignIn()">Sign In</button>
         </div>
     </div>
     <footer id="footer">

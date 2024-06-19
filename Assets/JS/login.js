@@ -1,49 +1,38 @@
-document.addEventListener('DOMContentLoaded',(event)=>{
-    const btnOK = document.getElementById('btnOK')
-    const btnCancel = document.getElementById('btnCancel')
-    const signIn = document.getElementById('signIn')
+document.addEventListener('DOMContentLoaded', (event) => {
+    const btnOK = document.getElementById('btnOK');
+    const btnCancel = document.getElementById('btnCancel');
+    const signIn = document.getElementById('signIn');
 
-    const txtUserName = document.getElementById('txtUserName')
-    const txtPassword = document.getElementById('txtPassword')
-    
-    const offSignIn = () => signIn.style.display = 'none'
+    const offSignIn = () => signIn.style.display = 'none';
 
-    // btnOK.addEventListener('click',()=>{
-    //     alert('Success');
-    //     offSignIn()
-    // })
-    document.getElementById('btnOK').addEventListener('click', function() {
-        var userNameInput = document.getElementById('txtUserName');
-        var passwordInput = document.getElementById('txtPassword');
-    
-        var userName = userNameInput.value.trim();
-        var password = passwordInput.value.trim();
-    
-        // Reset the input borders
-        userNameInput.classList.remove('error');
-        passwordInput.classList.remove('error');
-    
+    btnOK.addEventListener('click', () => {
+        const txtUserName = document.getElementById('txtUserName');
+        const txtPassword = document.getElementById('txtPassword');
+        txtUserName.classList.remove('error');
+        txtPassword.classList.remove('error');
+
+        var userName = txtUserName.value.trim();
+        var password = txtPassword.value.trim();
+
         if (userName && password) {
-            
-            alert('Thông báo: Thành công!');
+            alert('Thông báo: Đăng nhập thành công!');
+            offSignIn();
         } else {
-            
             if (!userName) {
-                userNameInput.classList.add('error');
+                txtUserName.classList.add('error');
             }
             if (!password) {
-                passwordInput.classList.add('error');
+                txtPassword.classList.add('error');
             }
-            alert('Vui lòng nhập đầy đủ thông tin.');
+            alert('Cảnh báo: Vui lòng nhập đầy đủ thông tin.');
         }
     });
-    
-    btnCancel.addEventListener('click',()=>{
+
+    btnCancel.addEventListener('click', () => {
         // Xu ly su kien click button Cancel
         offSignIn()
-    })
-    
-})
+    });
+});
 
 
 
