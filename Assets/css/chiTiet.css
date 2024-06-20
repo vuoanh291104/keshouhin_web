@@ -231,7 +231,62 @@ input[type="number"] {
 }
 .chatToband {
     cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    margin-bottom: 16px;
+    
+    
 }
+.chatToband_img {
+    background-color: #FFF;
+}
+
+.chatToband_Box {
+    margin-top: 4px;
+    font-weight: bold;
+    height: 46px;
+    width: 164px;
+    position: absolute;
+    left: -195px;
+    z-index: -1;
+    display: none;
+    text-align: center;
+    font-size: 32px;
+    line-height: 46px;
+    font-family: var(--font-Lora);
+    color: var(--color-lightpink);
+    border: 1px var(--color-pink) dotted;
+    border-radius: 10px;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -195px; /* Vị trí bắt đầu (ngoài cạnh trái) */
+    }
+    100% {
+        left: 64px; /* Vị trí kết thúc (bên trong div cha) */
+    }
+}
+@keyframes slideOut {
+    0% {
+        left: 64px; /* Vị trí bắt đầu (bên trong div cha) */
+    }
+    100% {
+        left: -195px; /* Vị trí kết thúc (ngoài cạnh trái) */
+    }
+}
+/* Thêm lớp để kích hoạt hiệu ứng trượt */
+.show {
+    display: block;
+    animation: slideIn .5s forwards;
+}
+.hide {
+    animation: slideOut .5s forwards;
+    display: block; /* Đảm bảo hiển thị trong quá trình trượt ra */
+}
+
 .moTa {
     /* color: var(--color-pink); */
     /* margin-left: 15%; */
@@ -263,4 +318,7 @@ hr {
 }
 .txtMoTa p {
     line-height: 1.6;
+}
+#footer p {
+    font-weight: normal;
 }
