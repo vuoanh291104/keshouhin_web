@@ -54,3 +54,27 @@ function loadProductDetails() {
 
 // Gọi hàm loadProductDetails khi trang được tải
 document.addEventListener('DOMContentLoaded', loadProductDetails);
+
+document.addEventListener('DOMContentLoaded', function() {
+    var parent = document.querySelector('.chatToband_img');
+    var child = document.querySelector('.chatToband_Box');
+    
+    parent.addEventListener('click', function() {
+        if (child.classList.contains('show')) {
+            child.classList.remove('show');
+            child.classList.add('hide');
+            child.addEventListener('animationend', function() {
+                if (child.classList.contains('hide')) {
+                    child.style.display = 'none';
+                    child.classList.remove('hide');
+                }
+            }, { once: true });
+        } else {
+            child.classList.remove('hide');
+            child.classList.add('show');
+            child.style.display = 'block'; /* Hiển thị ngay lập tức khi trượt vào */
+        }
+    });
+});
+
+
