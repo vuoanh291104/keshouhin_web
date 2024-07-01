@@ -76,5 +76,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var btnTru = document.getElementById('tru');
+    var btnCong = document.getElementById('cong');
+    var valueQuanti = document.getElementById('valuee');
+
+    function changeValue(a) {
+        const x = Number(valueQuanti.value) + Number(a);
+        if (x >= 0) {
+            valueQuanti.value = x;
+        }
+    }
+
+    btnTru.addEventListener('click', function() {
+        changeValue(-1);
+    });
+
+    btnCong.addEventListener('click', function() {
+        changeValue(1);
+    });
+});
 
 

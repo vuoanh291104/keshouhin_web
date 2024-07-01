@@ -11,11 +11,28 @@
             "id": "532b5dcbee073aa7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_Obsidion/GhiChep/Nội dung.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "50c6ad4fd9e3ee34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ]
@@ -138,8 +159,10 @@
       "command-palette:Mở khay lệnh": false
     }
   },
-  "active": "73b647fd39dddfdd",
+  "active": "50c6ad4fd9e3ee34",
   "lastOpenFiles": [
+    "_Obsidion/GhiChep/Nội dung.md",
+    "README.md",
     "Assets/img/img_Header/octicon_feed-person-16icon_person.svg",
     "Assets/img/img_Header/maki_shopicon_cart.svg",
     "Assets/img/img_Header/Hoshilogo.svg",
@@ -151,7 +174,6 @@
     "Assets/img/8.png",
     "Assets/img/7.png",
     "Assets/img/4.png",
-    "Assets/img/3.png",
     "Assets/css/home.css",
     "Assets/html/Home.html",
     "Assets/css/main.css",
@@ -162,7 +184,6 @@
     "Assets/css",
     "Assets",
     "_Obsidion/Task/TODO.md",
-    "_Obsidion/GhiChep/Nội dung.md",
     "_Obsidion/GhiChep/Nội dung 1.md"
   ]
 }
