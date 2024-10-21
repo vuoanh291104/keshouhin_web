@@ -1,24 +1,50 @@
+
+.mainSignIn {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+.posterShop {
+    flex: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.posterShop img {
+    width: 100%;
+    object-fit: cover; 
+}
+
+.signInRight {
+    flex: 1; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .signIn_Head {
-    padding: 70px 0;
+    
     text-align: center;
     font-size: 80px;
     color: var(--color-lightpink);
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .all {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .rowInfor {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 180px;
 }
 
 .txtTitle {
@@ -34,7 +60,7 @@
 
 .myInp {
     font-family: var(--font-be-vietnam);
-    width: 856px;
+    width: 750px;
     height: 64px;
     border-radius: var(--br-sizeS);
     font-size: 32px;

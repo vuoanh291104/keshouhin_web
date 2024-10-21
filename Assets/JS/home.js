@@ -1,85 +1,54 @@
-// $(document).ready(function() {
-//     function loadContent(url,callback) {
-//       var mainElement = $('.home_page');
-//       mainElement.empty(); // Xóa nội dung hiện tại của phần <main>
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+            const btnSignIn = document.getElementById('modaljs');
+            const signIn = document.getElementById('signIn');
+            if (btnSignIn && signIn) {
+                btnSignIn.addEventListener('click', () => {
+                    signIn.style.display = 'block';
+                });
+            }
 
-//       $.ajax({
-//         url: url,
-//         dataType: 'html',
-//         success: function(data) {
-//           mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
-//           if (callback) callback();
-//         }
-//       });
-//     }
+            // Event for button LogIn
+            const btnOK = document.getElementById('btnOK');
+            const btnCancel = document.getElementById('btnCancel');
 
-//     $('.about').click(function(event) {
-//       event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-//       loadContent('../html/About.html');
-//     });
+            if (btnOK && btnCancel) {
+                const offSignIn = () => signIn.style.display = 'none';
 
-//     $('.flashSale').click(function(event) {
-//       event.preventDefault();
-//       loadContent('../html/FlashSales.html',function(){
-//         $.getScript('../JS/FS.js'); 
-//       });
-//     });
+                btnOK.addEventListener('click', () => {
+                    const txtUserName = document.getElementById('txtUserName');
+                    const txtPassword = document.getElementById('txtPassword');
+                    txtUserName.classList.remove('error');
+                    txtPassword.classList.remove('error');
 
-//     $('.hot').click(function(event) {
-//       event.preventDefault();
-//       loadContent('../html/Hot.html');
-//     });
-//   });
+                    var userName = txtUserName.value.trim();
+                    var password = txtPassword.value.trim();
 
-//   $(document).ready(function(){
-//     $(window).scroll(function(){
-//         var mainHeadElement= $('.bodyhead');
-//         var BodyScrollElement = $('.addBodyScroll')
-//         var navElement= $('.nav');
-//         if($(this).scrollTop()){   
-//             navElement.addClass('navScroll'); 
-//             BodyScrollElement.addClass('add'); 
-//             mainHeadElement.addClass('cut');
-//         }else{
-//             navElement.removeClass('navScroll');
-//             BodyScrollElement.removeClass('add');
-//             mainHeadElement.removeClass('cut');
+                    if (userName && password) {
+                        alert('Thông báo: Đăng nhập thành công!');
+                        offSignIn();
+                    } else {
+                        if (!userName) {
+                            txtUserName.classList.add('error');
+                        }
+                        if (!password) {
+                            txtPassword.classList.add('error');
+                        }
+                        alert('Cảnh báo: Vui lòng nhập đầy đủ thông tin.');
+                    }
+                });
 
+                btnCancel.addEventListener('click', () => {
+                    offSignIn();
+                });
+            }
+        })
+        .catch(error => console.error('Error loading header:', error));
+});
 
-//         }
-//     });
-
-// });
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    const btnSignIn = document.getElementById('modaljs')
-    const signIn = document.getElementById('signIn')
-    btnSignIn.addEventListener('click', () => {
-        signIn.style.display = 'block'
-    })
-})
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     var slideIndex = 0;
-//     showSlides();
-
-//     function showSlides() {
-//         var slides = document.querySelectorAll('.img_slider');
-//         // Ẩn tất cả các ảnh
-//         for (var i = 0; i < slides.length; i++) {
-//             slides[i].style.display = 'none';
-//         }
-//         // Tăng chỉ số slideIndex
-//         slideIndex++;
-//         if (slideIndex > slides.length) {
-//             slideIndex = 1;
-//         }
-//         // Hiển thị ảnh hiện tại
-//         slides[slideIndex - 1].style.display = 'block';
-//         // Gọi lại hàm sau một khoảng thời gian (ví dụ: sau mỗi 2 giây)
-//         setTimeout(showSlides, 2000);
-//     }
-// });
 document.addEventListener("DOMContentLoaded", function () {
     let slideIndex = 0;
     const slides = document.querySelectorAll('.img_slider');
@@ -113,56 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// $(document).ready(function () {
-//     function loadContent(url) {
-//         var mainElement = $('.home_page');
-//         mainElement.empty(); // Xóa nội dung hiện tại của phần <main>
-
-//         $.ajax({
-//             url: url,
-//             dataType: 'html',
-//             success: function (data) {
-//                 mainElement.html(data); // Hiển thị nội dung của trang trong phần <main>
-
-//             },
-//             error: function (xhr, status, error) {
-//                 console.error('Error loading content:', error);
-//             }
-//         });
-//     }
-
-//     $('.about').click(function (event) {
-//         event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-//         loadContent('About.html');
-//     });
-
-//     $('.flashSale').click(function (event) {
-//         event.preventDefault();
-//         loadContent('FlashSales.html');
-
-//     });
-
-//     $('.hot').click(function (event) {
-//         event.preventDefault();
-//         loadContent('hot.html');
-//     });
-    
-//     $('.isClick').click(function(event){
-//         event.preventDefault();
-//         signIn.style.display='none';
-//         loadContent('signIn.html');
-        
-//     });
-//     $('.SeeMoreBox').click(function(event){
-//         loadContent('AllProducts.html')
-//     });
-
-//     $('.icon_cart').click(function(event){
-        
-//         loadContent('Cart.html')
-//     })
-    
-// });
 
 document.addEventListener("DOMContentLoaded", function() {
     let containerFS = document.querySelector('.FSadd .flashsale_container');
