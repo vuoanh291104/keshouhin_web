@@ -13,8 +13,8 @@
         <div class="oriBg">
             <div class="boxSignIn">
                 <div class="userName info">
-                    <div class="txtInfo">User name:</div>
-                    <input id="txtUserName" type="text" required>
+                    <div class="txtInfo">Email:</div>
+                    <input id="txtUserName" type="email" required>
                 </div>
 
                 <div class="pass info">
@@ -41,7 +41,7 @@
                 <div class="body_right">
                     <div class="search">
                         <img class="icon_search" src="../img/img_Header/Groupicon_search.svg" alt="search">
-                        <input class="input searchBox" type="text" placeholder=" Nhập tên sản phẩm... ">
+                        <input id ="search" class="input searchBox" type="text" placeholder=" Nhập tên sản phẩm... " onkeydown="handleSearchKeyDown(event)">
                     </div>
                     <div id="body_right_img">
                         <div id="iconID">
@@ -52,7 +52,11 @@
 
                             <img id="modaljs" class="icon_mainHeader1"
                                 src="../img/img_Header/octicon_feed-person-16icon_person.svg" alt="person">
+                            
                         </div>
+                    </div>
+                    <div id="accLogin">
+                        ddd
                     </div>
                 </div>
 
@@ -281,6 +285,7 @@
     </section>
     
     <script src="../JS/login.js"></script>
+    <script src="../JS/showPD.js"></script>
     
 </body>
 </html>

@@ -40,6 +40,11 @@
     align-items: center;
     margin-bottom: 35px;
 }
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+}
 
 .rowInfor {
     display: flex;
@@ -70,7 +75,15 @@
     border-style: solid;
     padding-left: 24px;
 }
-
+.error {
+    margin-left: 23%;
+    color: rgb(140, 197, 94);
+    font-size: 24px;
+    display: none;
+}
+.myInp.invalid {
+    border-color: rgb(140, 197, 94); 
+}
 .borRadio {
     width: 64px;
     height: 64px;
@@ -111,6 +124,12 @@
     font-size: 24px;
     border-radius: 10px;
     outline: none;
+    display: none;
+    
+}
+.btnDangKy:hover {
+    cursor: pointer;
+    background-color: var(--color-pink);
 }
 
 .DangKy {

@@ -10,82 +10,39 @@
     <link rel="stylesheet" href="../css/logIn.css">
     <link rel="stylesheet" href="../css/Cart.css">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="../JS/item.js"></script>
+ 
     <link rel="stylesheet" href="../css/itemGioHang.css">
 
 
-    <script src="../JS/cart.js"></script>
+    
     <script src="../JS/thongBao.js"></script>
 </head>
 
 <body>
     <div id="header"></div>
     <div class="all">
-        <div class="Cart">
+        <div id="Cart">
             <div class="logo">
                 <img src="../img/Logo/mdi_cartcart.svg" alt="">
                 <p>Sản phẩm</p>
             </div>
             <div class="lsSanPham">
-                <div class="item">
-                    <input type="checkbox" style="width: 35px; height: 35px;" checked>
-                    <div class="center">
-                        <div class="anh"><img src="../img/Product/ProductFS/ganier3.png" alt="" class="anhSanPham">
-                        </div>
-                        <div class="infoGioHang">
-                            <p class="tenSanPham">Vitamin C Whip - Chính hãng, Giúp làn da đẹp như người yêu bạn!</p>
-                            <p class="giaSanPham">280.000 đ</p>
-                        </div>
-                        <div class="groupBtnInp">
-                            <button id="tru1">-</button>
-                            <input id="value1" type="number" value="1">
-                            <button id="cong1">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <input type="checkbox" style="width: 35px; height: 35px;" checked>
-                    <div class="center">
-                        <div class="anh"><img src="../img/Product/ProductFS/dove1.png" alt="" class="anhSanPham"></div>
-                        <div class="infoGioHang">
-                            <p class="tenSanPham">Sữa tắm Dove - Tẩy sạch vết bẩn dính trên làn da của bạn</p>
-                            <p class="giaSanPham">150.000 đ</p>
-                        </div>
-                        <div class="groupBtnInp">
-                            <button id="tru2" onclick="changeValue(-1)">-</button>
-                            <input id="value2" type="number" value="3">
-                            <button id="cong2" onclick="changeValue(1)">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <input type="checkbox" style="width: 35px; height: 35px;">
-                    <div class="center">
-                        <div class="anh"><img src="../img/Product/ProductFS/dove2.png" alt="" class="anhSanPham"></div>
-                        <div class="infoGioHang">
-                            <p class="tenSanPham">Lọ tẩy tế bào chết Dove - Tẩy sạch tế bào không còn sống trên làn da
-                                của bạn</p>
-                            <p class="giaSanPham">120.000 đ</p>
-                        </div>
-                        <div class="groupBtnInp">
-                            <button id="tru3" onclick="changeValue(-1)">-</button>
-                            <input id="value3" type="number" value="1">
-                            <button id="cong3" onclick="changeValue(1)">+</button>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="tongTien">
                 <p class="labelTongTien">
                     Tổng tiền:
                 </p>
-                <p class="intTien">730.000 đ</p>
+                <p class="intTien">0 đ</p>
             </div>
             <div class="btnThanhToan">
                 <a href="buy.html"><button>Thanh toán</button></a>
 
             </div>
+        </div>
+        <div class="notLoginCart">
+            <img src="../img/Logo/isLoginCart_img.svg" alt="" class="notLoginCart_img">
+            <p class="notLoginCart_text">Vui lòng đăng nhập để xem giỏ hàng của bạn</p>
         </div>
     </div>
     <!-- footer -->
@@ -113,6 +70,7 @@
         </div>
     </footer>
     <script src="../JS/home.js"></script>
+    <script src="../JS/cart.js"></script>
     
 </body>
 

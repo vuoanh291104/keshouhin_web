@@ -1,3 +1,58 @@
+var userApi = 'http://localhost:3000/user';
+let isLogin = false;
+let loggedUser = null;
+
+function getUser(callback) {
+    fetch(userApi)
+        .then(response => response.json())
+        .then(callback);
+}
+
+function handleLogin(users) {
+    let email = document.getElementById('txtUserName').value;
+    let pass = document.getElementById('txtPassword').value;
+
+    let isSucess = users.some(user => {
+        if (user.email == email && user.password == pass) {
+            alert('Đăng nhập thành công');
+            loggedUser = user;
+            isLogin = true;
+
+            // Lưu thông tin người dùng vào localStorage để giữ trạng thái đăng nhập
+            sessionStorage.setItem('loggedUser', JSON.stringify(loggedUser));
+            sessionStorage.setItem('isLogin', JSON.stringify(isLogin));
+
+            return true; // Ngừng lặp khi tìm thấy
+        }
+        return false; // Tiếp tục lặp
+    });
+    
+    if (!isSucess) {
+        alert('Đăng nhập thất bại. Tài khoản không tồn tại.');
+        loggedUser = null;
+        isLogin = false;
+
+        // Xóa thông tin đăng nhập khỏi localStorage nếu thất bại
+        sessionStorage.removeItem('loggedUser');
+        sessionStorage.setItem('isLogin', JSON.stringify(isLogin));
+    }
+}
+
+function checkLogin() {
+    // Kiểm tra trạng thái đăng nhập từ localStorage
+    isLogin = JSON.parse(sessionStorage.getItem('isLogin'));
+    loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+
+    if (isLogin && loggedUser) {
+        var imgLogin = document.getElementById('modaljs');
+        var loginTrue = document.getElementById('accLogin');
+        imgLogin.style.display = 'none';
+        loginTrue.style.display = 'block';
+        loginTrue.textContent = loggedUser.name.charAt(0).toUpperCase();
+    
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     fetch('header.html')
         .then(response => response.text())
@@ -19,35 +74,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 const offSignIn = () => signIn.style.display = 'none';
 
                 btnOK.addEventListener('click', () => {
-                    const txtUserName = document.getElementById('txtUserName');
-                    const txtPassword = document.getElementById('txtPassword');
-                    txtUserName.classList.remove('error');
-                    txtPassword.classList.remove('error');
-
-                    var userName = txtUserName.value.trim();
-                    var password = txtPassword.value.trim();
-
-                    if (userName && password) {
-                        alert('Thông báo: Đăng nhập thành công!');
-                        offSignIn();
-                    } else {
-                        if (!userName) {
-                            txtUserName.classList.add('error');
+                    getUser(users => {
+                        handleLogin(users);
+                        checkLogin(); // Di chuyển checkLogin vào đây
+                        if (isLogin) {
+                            offSignIn(); // Tắt modal nếu đăng nhập thành công
                         }
-                        if (!password) {
-                            txtPassword.classList.add('error');
-                        }
-                        alert('Cảnh báo: Vui lòng nhập đầy đủ thông tin.');
-                    }
+                    });
                 });
 
                 btnCancel.addEventListener('click', () => {
                     offSignIn();
                 });
             }
+
+            // Kiểm tra trạng thái đăng nhập khi tải trang
+            checkLogin();
         })
         .catch(error => console.error('Error loading header:', error));
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     let slideIndex = 0;
@@ -121,10 +167,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
+var productApi = "http://localhost:3000/products";
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('../data/products.json')
+    fetch(productApi)
         .then(response => response.json())
         .then(products => {
             const flashsaleContainer = document.querySelector('.flashsale_container');
@@ -139,15 +185,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cost = FSProduct.querySelector('.FSProduct_cost');
                 const name = FSProduct.querySelector('.FSProduct_name');
                 const monoCost = FSProduct.querySelector('.FSProduct_costMono');
+                var percent = FSProduct.querySelector('.percent_buy');
                 // Đặt nội dung từ `products.json` vào các phần tử tương ứng
                 img.src = product.URLimg;
                 img.alt = product.Band;
                 cost.textContent = `${product.CostSale}.000đ`; // Giả sử `Cost` lưu giá bán
                 name.textContent = product.Name;
                 monoCost.textContent= `${product.Cost}.000đ`
+                var percentValue = (100 - Math.round(((product.Quantity - product.QuantityOrder) / product.Quantity) * 100)) + '%';
+                percent.textContent = `${percentValue} `
+                console.log(percent.textContent)
                 FSProduct.addEventListener('click', () => {
                     // Điều hướng đến trang chi tiết sản phẩm với id
-                    window.location.href = `chitiet.html?id=${product.ID}`;
+                    window.location.href = `chitiet.html?id=${product.id}`;
                 });
             }
         })
