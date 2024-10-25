@@ -123,6 +123,20 @@
 section {
     width: 100%;
 }
+.saleFS {
+    position: absolute;
+    background-color: var(--color-lightpink);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    right: 16px;
+    top: 16px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 .change {
     width: 100%;

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../css/logIn.css">
     <link rel="stylesheet" href="../css/signIn.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="../JS/login.js"></script>
-    <script src="../JS/signIn.js"></script>
+
+
     <script src="../JS/home.js"></script>
     <script src="../JS/thongBao.js"></script>
 </head>
@@ -23,30 +23,45 @@
         <div class="signInRight">
             <div class="signIn_Head">SIGN IN</div>
             <div class="all">
-                <div class="rowInfor">
-                    <div class="txtTitle">User Name</div>
-                    <div class="select"><input type="text" class="myInp" required></div>
-                </div>
-                <div class="rowInfor">
-                    <div class="txtTitle">Email</div>
-                    <div class="select"><input type="email" class="myInp" required></div>
-                </div>
-                <div class="rowInfor">
-                    <div class="txtTitle">Phone</div>
-                    <div class="select"><input type="tel" class="myInp" required></div>
-                </div>
-                <div class="rowInfor">
-                    <div class="txtTitle">Sex</div>
-                    <div class="select chooseGioiTinh">
-                        <input type="radio" value="Male" name="rdSex" class="borRadio" required>
-                        <div class="txtTitle gioiTinh">Male</div>
-                        <input type="radio" value="Female" name="rdSex" class="borRadio" required>
-                        <div class="txtTitle gioiTinh">Female</div>
+                <div class="form-group">
+                    <div class="rowInfor">
+                        <div class="txtTitle">Name</div>
+                        <div class="select"><input type="text" id="name" class="myInp" required></div>
                     </div>
+                    <span class="error" id="name-error"></span>
                 </div>
-                <div class="rowInfor">
-                    <div class="txtTitle">Password</div>
-                    <div class="select"><input type="password" class="myInp" required></div>
+                <div class="form-group">
+                    <div class="rowInfor">
+                        <div class="txtTitle">Email</div>
+                        <div class="select"><input type="email" id="mail" class="myInp" required></div>
+                    </div>
+                    <span class="error" id="mail-error"></span>
+                </div>
+                <div class="form-group">
+                    <div class="rowInfor">
+                        <div class="txtTitle">Phone</div>
+                        <div class="select"><input type="tel" id="phone" class="myInp" required></div>
+                    </div>
+                    <span class="error" id="phone-error"></span>
+                </div>
+                <div class="form-group">
+                    <div class="rowInfor">
+                        <div class="txtTitle">Sex</div>
+                        <div class="select chooseGioiTinh">
+                            <input type="radio" id="male" value="Male" name="rdSex" class="borRadio" required>
+                            <div class="txtTitle gioiTinh">Male</div>
+                            <input type="radio" id="female" value="Female" name="rdSex" class="borRadio" required>
+                            <div class="txtTitle gioiTinh">Female</div>
+                        </div>
+                    </div>
+                    <span class="error" id="sex-error"></span>
+                </div>
+                <div class="form-group">
+                    <div class="rowInfor">
+                        <div class="txtTitle">Password</div>
+                        <div class="select"><input type="password" id="pass" class="myInp" required></div>
+                    </div>
+                    <span class="error" id="pass-error"></span>
                 </div>
                 <div class="rowInfor checkDieuKhoan">
                     <input id="check" type="checkbox" style="width: 54px; height: 54px;" required>
@@ -81,6 +96,6 @@
             
         </div>
     </footer>
-
+    <script src="../JS/signIn.js"></script>
 </body>
 </html>

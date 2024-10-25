@@ -1,13 +1,11 @@
+var productApi = "http://localhost:3000/products";
+
 // Hàm để lấy tham số URL
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
 
-// Hàm để tải dữ liệu JSON từ file
-function loadJSON(url) {
-    return fetch(url).then(response => response.json());
-}
 
 // Hàm để cập nhật chi tiết sản phẩm
 function loadProductDetails() {
@@ -17,9 +15,10 @@ function loadProductDetails() {
         return;
     }
 
-    loadJSON('../data/products.json')
+    fetch(productApi)
+        .then(response=> response.json())
         .then(products => {
-            const product = products.find(p => p.ID == productId);
+            const product = products.find(p => p.id == productId);
             if (!product) {
                 console.error('Product not found');
                 return;

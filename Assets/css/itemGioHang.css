@@ -7,7 +7,7 @@
     margin-top: 50px;
     margin-left: 50px;
     width: 100%;
-    height: 130px;
+    height: 190px;
     display: flex;
     position: relative;
     align-items: center;
@@ -47,6 +47,14 @@
 
 .tenSanPham {
     padding-bottom: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Giới hạn số dòng */
+    overflow: hidden; /* Ẩn văn bản vượt quá */
+    text-overflow: ellipsis; /* Hiển thị dấu ... */
+    line-height: 1.2; /* Chiều cao dòng */
+    max-height: 2.4em;
+    margin-bottom: 19px;
 }
 
 .groupBtnInp {
@@ -56,7 +64,8 @@
     align-items: center;
 }
 
-.groupBtnInp button {
+.groupBtnInp .tru,
+.groupBtnInp .cong {
     width: 32px;
     height: 32px;
     border: 1px solid #FFF;

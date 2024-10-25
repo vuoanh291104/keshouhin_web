@@ -66,6 +66,21 @@ body {
     box-shadow: none;
 
 }
+.body_right #accLogin {
+    border: var(--color-lightcoral) 2px solid; 
+    padding: 10px;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%; 
+    text-align: center;
+    line-height:46px;
+    display: none;
+    color: var(--color-lightcoral);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
 
 .icon_mainHeader,
 .icon_mainHeader1 {
@@ -390,6 +405,7 @@ main {
     width: 80%;
     margin: 0 26px;
 }
+
 .btnFS {
     width: 100%;
     position: absolute;
